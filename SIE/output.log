@@ -1,0 +1,1061 @@
+2021/06/09 15:12:05 - Kitchen - Logging is at level : Debug
+2021/06/09 15:12:05 - Kitchen - Start of run.
+2021/06/09 15:12:05 - Kitchen - Allocate new job.
+2021/06/09 15:12:05 - Kitchen - Parsing command line options.
+2021/06/09 15:12:15 - JOB_SIE_C_PERSONA - Start of job execution
+2021/06/09 15:12:15 - JOB_SIE_C_PERSONA - exec(0, 0, START.0)
+2021/06/09 15:12:15 - START - Starting job entry
+2021/06/09 15:12:15 - JOB_SIE_C_PERSONA - Starting entry [Load in table aux]
+2021/06/09 15:12:15 - JOB_SIE_C_PERSONA - exec(1, 0, Load in table aux.0)
+2021/06/09 15:12:15 - Load in table aux - Starting job entry
+2021/06/09 15:12:15 - Load in table aux - Opening transformation: [/opt/sie/ETL_SIE_C_PERSONA.ktr]
+2021/06/09 15:12:15 - Load in table aux - Loading transformation from XML file [/opt/sie/ETL_SIE_C_PERSONA.ktr]
+2021/06/09 15:12:15 - Load in table aux - Starting transformation...(file=${ETL_DIR}/ETL_SIE_C_PERSONA.ktr, name=Load in table aux, repinfo=null)
+2021/06/09 15:12:15 - Load in table aux - Using run configuration [Pentaho local]
+2021/06/09 15:12:15 - Load in table aux - Using legacy execution engine
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA - Transformation is pre-loaded.
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA - nr of steps to run : 4  , nr of hops : 3
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA - Dispatching started for transformation [ETL_SIE_C_PERSONA]
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA - Nr of arguments detected:0 
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA - This is not a replay transformation
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA - I found 3 different steps to launch.
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA - Allocating rowsets...
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA -  Allocating rowsets for step 0 --> Read Data
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA -   prevcopies = 1, nextcopies=1
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA - Transformation allocated new rowset [Read Data.0 - Vertica Personas.0]
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA -  Allocated 1 rowsets for step 0 --> Read Data  
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA -  Allocating rowsets for step 1 --> Vertica Personas
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA -  Allocated 1 rowsets for step 1 --> Vertica Personas  
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA -  Allocating rowsets for step 2 --> Get System Info
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA -   prevcopies = 1, nextcopies=1
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA - Transformation allocated new rowset [Get System Info.0 - Read Data.0]
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA -  Allocated 2 rowsets for step 2 --> Get System Info  
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA - Allocating Steps & StepData...
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA -  Transformation is about to allocate step [Read Data] of type [TableInput]
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA -   Step has nrcopies=1
+2021/06/09 15:12:15 - Read Data.0 - distribution activated
+2021/06/09 15:12:15 - Read Data.0 - Starting allocation of buffers & new threads...
+2021/06/09 15:12:15 - Read Data.0 - Step info: nrinput=1 nroutput=1
+2021/06/09 15:12:15 - Read Data.0 - Got previous step from [Read Data] #0 --> Get System Info
+2021/06/09 15:12:15 - Read Data.0 - input rel is 1:1
+2021/06/09 15:12:15 - Read Data.0 - Found input rowset [Get System Info.0 - Read Data.0]
+2021/06/09 15:12:15 - Read Data.0 - output rel. is  1:1
+2021/06/09 15:12:15 - Read Data.0 - Found output rowset [Read Data.0 - Vertica Personas.0]
+2021/06/09 15:12:15 - Read Data.0 - Finished dispatching
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA -  Transformation has allocated a new step: [Read Data].0
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA -  Transformation is about to allocate step [Vertica Personas] of type [VerticaBulkLoader]
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA -   Step has nrcopies=1
+2021/06/09 15:12:15 - Vertica Personas.0 - distribution activated
+2021/06/09 15:12:15 - Vertica Personas.0 - Starting allocation of buffers & new threads...
+2021/06/09 15:12:15 - Vertica Personas.0 - Step info: nrinput=1 nroutput=0
+2021/06/09 15:12:15 - Vertica Personas.0 - Got previous step from [Vertica Personas] #0 --> Read Data
+2021/06/09 15:12:15 - Vertica Personas.0 - input rel is 1:1
+2021/06/09 15:12:15 - Vertica Personas.0 - Found input rowset [Read Data.0 - Vertica Personas.0]
+2021/06/09 15:12:15 - Vertica Personas.0 - Finished dispatching
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA -  Transformation has allocated a new step: [Vertica Personas].0
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA -  Transformation is about to allocate step [Get System Info] of type [SystemInfo]
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA -   Step has nrcopies=1
+2021/06/09 15:12:15 - Get System Info.0 - distribution activated
+2021/06/09 15:12:15 - Get System Info.0 - Starting allocation of buffers & new threads...
+2021/06/09 15:12:15 - Get System Info.0 - Step info: nrinput=0 nroutput=1
+2021/06/09 15:12:15 - Get System Info.0 - output rel. is  1:1
+2021/06/09 15:12:15 - Get System Info.0 - Found output rowset [Get System Info.0 - Read Data.0]
+2021/06/09 15:12:15 - Get System Info.0 - Finished dispatching
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA -  Transformation has allocated a new step: [Get System Info].0
+2021/06/09 15:12:15 - SIE_TRACE - New database connection defined
+2021/06/09 15:12:15 - ETL_SIE_C_PERSONA - Opening log connection [SIE_TRACE]
+2021/06/09 15:12:16 - SIE_TRACE - Auto commit off
+2021/06/09 15:12:16 - SIE_TRACE - Auto commit off
+2021/06/09 15:12:16 - SIE_TRACE - launch SELECT statement: 
+2021/06/09 15:12:16 - SIE_TRACE - SELECT top 0 * FROM dbo.SIE_R_BITACORA_ACTUALIZACION_SIE_C_PERSONA WITH (UPDLOCK, HOLDLOCK)
+2021/06/09 15:12:16 - SIE_TRACE - 1 statement executed
+2021/06/09 15:12:16 - ETL_SIE_C_PERSONA - Start date found from previous log entry: 2021-06-09 15:12:00.027
+2021/06/09 15:12:16 - ETL_SIE_C_PERSONA - This transformation can be replayed with replay date: 2021/06/09 15:12:15
+2021/06/09 15:12:16 - SIE_TRACE - Preparing statement: 
+2021/06/09 15:12:16 - SIE_TRACE - INSERT INTO dbo.SIE_R_BITACORA_ACTUALIZACION_SIE_C_PERSONA (ID_BATCH, CHANNEL_ID, TRANSNAME, STATUS, LINES_READ, LINES_WRITTEN, LINES_UPDATED, LINES_INPUT, LINES_OUTPUT, LINES_REJECTED, ERRORS, STARTDATE, ENDDATE, LOGDATE, DEPDATE, REPLAYDATE) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2021/06/09 15:12:16 - SIE_TRACE - Commit on database connection [SIE_TRACE]
+2021/06/09 15:12:16 - SIE_TRACE - Commit on database connection [SIE_TRACE]
+2021/06/09 15:12:16 - SIE_TRACE - Connection to database closed!
+2021/06/09 15:12:16 - ETL_SIE_C_PERSONA - Initialising 3 steps...
+2021/06/09 15:12:16 - Read Data.0 - Released server socket on port 0
+2021/06/09 15:12:16 - Get System Info.0 - Released server socket on port 0
+2021/06/09 15:12:16 - Vertica Personas.0 - Released server socket on port 0
+2021/06/09 15:12:16 - SIE_TEMPS - New database connection defined
+2021/06/09 15:12:16 - Vertica-Desa - New database connection defined
+2021/06/09 15:12:16 - SIE_TEMPS - Auto commit off
+2021/06/09 15:12:16 - Read Data.0 - Connected to database...
+2021/06/09 15:12:16 - Vertica Personas.0 - Connected to database [Vertica-Desa]
+2021/06/09 15:12:16 - ETL_SIE_C_PERSONA - Step [Read Data.0] initialized flawlessly.
+2021/06/09 15:12:16 - ETL_SIE_C_PERSONA - Step [Vertica Personas.0] initialized flawlessly.
+2021/06/09 15:12:16 - ETL_SIE_C_PERSONA - Step [Get System Info.0] initialized flawlessly.
+2021/06/09 15:12:16 - Read Data.0 - Starting to run...
+2021/06/09 15:12:16 - Get System Info.0 - Starting to run...
+2021/06/09 15:12:16 - Read Data.0 - Reading query parameters from stream [Get System Info]
+2021/06/09 15:12:16 - Vertica Personas.0 - Starting to run...
+2021/06/09 15:12:16 - Read Data.0 - Reading from step [Get System Info]
+2021/06/09 15:12:16 - ETL_SIE_C_PERSONA - Transformation has allocated 3 threads and 2 rowsets.
+2021/06/09 15:12:16 - Get System Info.0 - Signaling 'output done' to 1 output rowsets.
+2021/06/09 15:12:16 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2021/06/09 15:12:16 - Read Data.0 - Query parameters found = [2021/06/09 15:12:00.027], [2021/06/09 15:12:15.818]
+2021/06/09 15:12:16 - Read Data.0 - SQL query : SELECT
+2021/06/09 15:12:16 - Read Data.0 - 		 P.N_ID
+2021/06/09 15:12:16 - Read Data.0 - 		,P.N_NSS
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_NUM_CEDULA
+2021/06/09 15:12:16 - Read Data.0 - 		,P.N_CVE_TIPO_IDENTIFICACION
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_DESC_OTRA_IDENTIFICACION
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_NUM_OTRA_IDENTIFICACION
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_NOMBRE1
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_NOMBRE2
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_APELLIDO1
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_APELLIDO2
+2021/06/09 15:12:16 - Read Data.0 - 		,[SIE_TEMPS].[dbo].FN_WILDCARD_NOMBRES(C_NOMBRE1) AS C_NOMBRE1_BUSCAR
+2021/06/09 15:12:16 - Read Data.0 - 		,[SIE_TEMPS].[dbo].FN_WILDCARD_NOMBRES(C_NOMBRE2) AS C_NOMBRE2_BUSCAR
+2021/06/09 15:12:16 - Read Data.0 - 		,[SIE_TEMPS].[dbo].FN_WILDCARD_NOMBRES(C_APELLIDO1) AS C_APELLIDO1_BUSCAR
+2021/06/09 15:12:16 - Read Data.0 - 		,[SIE_TEMPS].[dbo].FN_WILDCARD_NOMBRES(C_APELLIDO2) AS C_APELLIDO2_BUSCAR
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_NOMBRES_APELLIDOS
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_APELLIDOS_NOMBRES
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_APELLIDOS_NOMBRES_CON_COMA
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_SEXO
+2021/06/09 15:12:16 - Read Data.0 - 		,cast(P.D_FECHA_NACIMIENTO as datetime) D_FECHA_NACIMIENTO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.N_EDAD_ANHO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.N_EDAD_MESES
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_CVE_EDO_CIVIL
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_DESC_EDO_CIVIL
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_CVE_PAIS
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_DESC_PAIS
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_CVE_DEPARTAMENTO_NAC
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_DESC_DEPARTAMENTO_NAC
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_CVE_MUNICIPIO_NAC
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_DESC_MUNICIPIO_NAC
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_CVE_DEPARTAMENTO_ACTUAL
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_DESC_DEPARTAMENTO_ACTUAL
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_CVE_MUNICIPIO_ACTUAL
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_DESC_MUNICIPIO_ACTUAL
+2021/06/09 15:12:16 - Read Data.0 - 		,P.N_CVE_CLASIFICACION_BARRIO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_CLASIFICACION_BARRIO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.N_CVE_BARRIO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_DESC_BARRIO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.N_CVE_DISTRITO_ZONA_SECTOR_BO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_DESC_DISTRITO_ZONA_SECTOR_BO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.N_CVE_MUNICIPIO_BO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_CVE_MUNICIPIO_ACTUAL_BO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_DESC_MUNICIPIO_BO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.N_CVE_DEPARTAMENTO_BO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_CVE_DEPARTAMENTO_ACTUAL_BO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_DESC_DEPARTAMENTO_BO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_DOMICILIO
+2021/06/09 15:12:16 - Read Data.0 - 		,cast(P.D_FECHA_REGISTRO as datetime) D_FECHA_REGISTRO
+2021/06/09 15:12:16 - Read Data.0 - 		,cast(P.D_FECHA_GRABACION as datetime) D_FECHA_GRABACION
+2021/06/09 15:12:16 - Read Data.0 - 		,cast(P.D_FECHA_INSCRIPCION as datetime) D_FECHA_INSCRIPCION
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_ESTUDIANTE
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_DISCAPACITADO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_ESTATUS
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_USR_GRABACION
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_CVE_SUCURSAL
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_DESC_SUCURSAL
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_DIFUNTO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_TRAB_CAMPO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.N_TOTAL_SEMANAS
+2021/06/09 15:12:16 - Read Data.0 - 		,P.N_ID_FOTOGRAFIA
+2021/06/09 15:12:16 - Read Data.0 - 		,P.N_NSS_PADRE
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_NOMBRES_APELLIDOS_PADRE
+2021/06/09 15:12:16 - Read Data.0 - 		,P.N_NSS_MADRE
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_NOMBRES_APELLIDOS_MADRE
+2021/06/09 15:12:16 - Read Data.0 - 		,P.N_CVE_IPSS
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_DESC_IPSS
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_EN_PERCAPITA_DEL_MES
+2021/06/09 15:12:16 - Read Data.0 - 		,P.N_ULTIMO_REGISTRO_PATRONAL
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_RAZON_SOCIAL_EMPLEADOR
+2021/06/09 15:12:16 - Read Data.0 - 		,P.N_ULTIMA_CVE_NOMINA
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_NOMBRE_COMERCIAL_NOMINA
+2021/06/09 15:12:16 - Read Data.0 - 		,P.N_CVE_REGIMEN_ULT_NOMINA
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_DESC_REGIMEN_ULT_NOMINA
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_ULTIMO_PERIODO_FACTURADO
+2021/06/09 15:12:16 - Read Data.0 -         ,cast(DateName(M, DateAdd(M, cast(LEFT(P.C_ULTIMO_PERIODO_FACTURADO,2) AS int), -1)) as char(3)) + ' ' + RIGHT(P.C_ULTIMO_PERIODO_FACTURADO,4) C_ULTIMO_PERIODO_FACTURADO_FORMAT 
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_ASEGURADO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_PENSIONADO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_ES_TITULAR
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_ES_TRABAJADOR_INSS
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_SUBSIDIO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_BENEFICIARIOS
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_SUPERVIVENCIA
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_EXPEDIENTE
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_CARNET_ASEGURADO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_CARNET_PENSIONADO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_CARNET_BENEFICIARIO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_LACTANCIA
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_NAT_NEL
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_COMISION_MEDICA
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_CONSTANCIAS
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_APODERADOS
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_PRESTAMOS
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_BENEFICIARIODE
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_ASIGNACIONDE
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_APODERADODE
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_INDEMNIZACIONES
+2021/06/09 15:12:16 - Read Data.0 - 		,P.N_CVE_TIPO_CIUDADANO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.C_DESC_TIPO_CIUDADANO
+2021/06/09 15:12:16 - Read Data.0 - 		,P.B_ES_HALLAZGO_FISCALIZACION_PENSION
+2021/06/09 15:12:16 - Read Data.0 - 		,P.N_CHEKSUM
+2021/06/09 15:12:16 - Read Data.0 - 		,DOC.C_URL
+2021/06/09 15:12:16 - Read Data.0 - 		,cast(P.D_FECHA_PROCESADO as datetime) D_FECHA_PROCESADO
+2021/06/09 15:12:16 - Read Data.0 - FROM	SIE_TEMPS.dbo.SIE_C_PERSONA P
+2021/06/09 15:12:16 - Read Data.0 - 		LEFT JOIN [SIE_IMAGENES].[dbo].[SIE_ADD_DOCUMENTOS] DOC
+2021/06/09 15:12:16 - Read Data.0 - 		ON P.N_ID_FOTOGRAFIA = DOC.N_ID_DOCUMENTO
+2021/06/09 15:12:16 - Read Data.0 - WHERE P.D_FECHA_PROCESADO  >=? AND P.D_FECHA_PROCESADO <? 
+2021/06/09 15:12:18 - Read Data.0 - Signaling 'output done' to 1 output rowsets.
+2021/06/09 15:12:18 - Read Data.0 - Finished reading query, closing connection.
+2021/06/09 15:12:18 - SIE_TEMPS - Commit on database connection [SIE_TEMPS]
+2021/06/09 15:12:18 - SIE_TEMPS - Connection to database closed!
+2021/06/09 15:12:18 - Read Data.0 - Finished processing (I=2, O=0, R=1, W=2, U=0, E=0)
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field N_ID (Integer) to target column N_ID (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field N_NSS (Integer) to target column N_NSS (Numeric) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_NUM_CEDULA (String) to target column C_NUM_CEDULA (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field N_CVE_TIPO_IDENTIFICACION (Integer) to target column N_CVE_TIPO_IDENTIFICACION (Numeric) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_DESC_OTRA_IDENTIFICACION (String) to target column C_DESC_OTRA_IDENTIFICACION (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_NUM_OTRA_IDENTIFICACION (String) to target column C_NUM_OTRA_IDENTIFICACION (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_NOMBRE1 (String) to target column C_NOMBRE1 (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_NOMBRE2 (String) to target column C_NOMBRE2 (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_APELLIDO1 (String) to target column C_APELLIDO1 (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_APELLIDO2 (String) to target column C_APELLIDO2 (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_NOMBRE1_BUSCAR (String) to target column C_NOMBRE1_BUSCAR (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_NOMBRE2_BUSCAR (String) to target column C_NOMBRE2_BUSCAR (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_APELLIDO1_BUSCAR (String) to target column C_APELLIDO1_BUSCAR (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_APELLIDO2_BUSCAR (String) to target column C_APELLIDO2_BUSCAR (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_NOMBRES_APELLIDOS (String) to target column C_NOMBRES_APELLIDOS (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_APELLIDOS_NOMBRES (String) to target column C_APELLIDOS_NOMBRES (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_APELLIDOS_NOMBRES_CON_COMA (String) to target column C_APELLIDOS_NOMBRES_CON_COMA (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_SEXO (String) to target column C_SEXO (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field D_FECHA_NACIMIENTO (Timestamp) to target column D_FECHA_NACIMIENTO (Timestamp) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field N_EDAD_ANHO (Integer) to target column N_EDAD_ANHO (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field N_EDAD_MESES (Integer) to target column N_EDAD_MESES (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_CVE_EDO_CIVIL (String) to target column C_CVE_EDO_CIVIL (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_DESC_EDO_CIVIL (String) to target column C_DESC_EDO_CIVIL (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_CVE_PAIS (String) to target column C_CVE_PAIS (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_DESC_PAIS (String) to target column C_DESC_PAIS (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_CVE_DEPARTAMENTO_NAC (String) to target column C_CVE_DEPARTAMENTO_NAC (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_DESC_DEPARTAMENTO_NAC (String) to target column C_DESC_DEPARTAMENTO_NAC (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_CVE_MUNICIPIO_NAC (String) to target column C_CVE_MUNICIPIO_NAC (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_DESC_MUNICIPIO_NAC (String) to target column C_DESC_MUNICIPIO_NAC (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_CVE_DEPARTAMENTO_ACTUAL (String) to target column C_CVE_DEPARTAMENTO_ACTUAL (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_DESC_DEPARTAMENTO_ACTUAL (String) to target column C_DESC_DEPARTAMENTO_ACTUAL (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_CVE_MUNICIPIO_ACTUAL (String) to target column C_CVE_MUNICIPIO_ACTUAL (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_DESC_MUNICIPIO_ACTUAL (String) to target column C_DESC_MUNICIPIO_ACTUAL (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field N_CVE_CLASIFICACION_BARRIO (Integer) to target column N_CVE_CLASIFICACION_BARRIO (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_CLASIFICACION_BARRIO (String) to target column C_CLASIFICACION_BARRIO (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field N_CVE_BARRIO (Integer) to target column N_CVE_BARRIO (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_DESC_BARRIO (String) to target column C_DESC_BARRIO (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field N_CVE_DISTRITO_ZONA_SECTOR_BO (Integer) to target column N_CVE_DISTRITO_ZONA_SECTOR_BO (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_DESC_DISTRITO_ZONA_SECTOR_BO (String) to target column C_DESC_DISTRITO_ZONA_SECTOR_BO (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field N_CVE_MUNICIPIO_BO (Integer) to target column N_CVE_MUNICIPIO_BO (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_CVE_MUNICIPIO_ACTUAL_BO (String) to target column C_CVE_MUNICIPIO_ACTUAL_BO (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_DESC_MUNICIPIO_BO (String) to target column C_DESC_MUNICIPIO_BO (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field N_CVE_DEPARTAMENTO_BO (Integer) to target column N_CVE_DEPARTAMENTO_BO (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_CVE_DEPARTAMENTO_ACTUAL_BO (String) to target column C_CVE_DEPARTAMENTO_ACTUAL_BO (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_DESC_DEPARTAMENTO_BO (String) to target column C_DESC_DEPARTAMENTO_BO (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_DOMICILIO (String) to target column C_DOMICILIO (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field D_FECHA_REGISTRO (Timestamp) to target column D_FECHA_REGISTRO (Timestamp) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field D_FECHA_GRABACION (Timestamp) to target column D_FECHA_GRABACION (Timestamp) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field D_FECHA_INSCRIPCION (Timestamp) to target column D_FECHA_INSCRIPCION (Timestamp) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_ESTUDIANTE (String) to target column C_ESTUDIANTE (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_DISCAPACITADO (String) to target column C_DISCAPACITADO (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_ESTATUS (String) to target column C_ESTATUS (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_USR_GRABACION (String) to target column C_USR_GRABACION (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_CVE_SUCURSAL (String) to target column C_CVE_SUCURSAL (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_DESC_SUCURSAL (String) to target column C_DESC_SUCURSAL (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_DIFUNTO (Boolean) to target column B_DIFUNTO (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_TRAB_CAMPO (Boolean) to target column B_TRAB_CAMPO (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field N_TOTAL_SEMANAS (Integer) to target column N_TOTAL_SEMANAS (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field N_ID_FOTOGRAFIA (Integer) to target column N_ID_FOTOGRAFIA (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field N_NSS_PADRE (Integer) to target column N_NSS_PADRE (Numeric) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_NOMBRES_APELLIDOS_PADRE (String) to target column C_NOMBRES_APELLIDOS_PADRE (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field N_NSS_MADRE (Integer) to target column N_NSS_MADRE (Numeric) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_NOMBRES_APELLIDOS_MADRE (String) to target column C_NOMBRES_APELLIDOS_MADRE (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field N_CVE_IPSS (Integer) to target column N_CVE_IPSS (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_DESC_IPSS (String) to target column C_DESC_IPSS (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_EN_PERCAPITA_DEL_MES (Boolean) to target column B_EN_PERCAPITA_DEL_MES (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field N_ULTIMO_REGISTRO_PATRONAL (Integer) to target column N_ULTIMO_REGISTRO_PATRONAL (Numeric) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_RAZON_SOCIAL_EMPLEADOR (String) to target column C_RAZON_SOCIAL_EMPLEADOR (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field N_ULTIMA_CVE_NOMINA (Integer) to target column N_ULTIMA_CVE_NOMINA (Numeric) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_NOMBRE_COMERCIAL_NOMINA (String) to target column C_NOMBRE_COMERCIAL_NOMINA (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field N_CVE_REGIMEN_ULT_NOMINA (Integer) to target column N_CVE_REGIMEN_ULT_NOMINA (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_DESC_REGIMEN_ULT_NOMINA (String) to target column C_DESC_REGIMEN_ULT_NOMINA (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_ULTIMO_PERIODO_FACTURADO (String) to target column C_ULTIMO_PERIODO_FACTURADO (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_ASEGURADO (Boolean) to target column B_ASEGURADO (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_PENSIONADO (Boolean) to target column B_PENSIONADO (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_ES_TITULAR (Boolean) to target column B_ES_TITULAR (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_ES_TRABAJADOR_INSS (Boolean) to target column B_ES_TRABAJADOR_INSS (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_SUBSIDIO (Boolean) to target column B_SUBSIDIO (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_BENEFICIARIOS (Boolean) to target column B_BENEFICIARIOS (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_SUPERVIVENCIA (Boolean) to target column B_SUPERVIVENCIA (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_EXPEDIENTE (Boolean) to target column B_EXPEDIENTE (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_CARNET_ASEGURADO (Boolean) to target column B_CARNET_ASEGURADO (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_CARNET_PENSIONADO (Boolean) to target column B_CARNET_PENSIONADO (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_CARNET_BENEFICIARIO (Boolean) to target column B_CARNET_BENEFICIARIO (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_LACTANCIA (Boolean) to target column B_LACTANCIA (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_NAT_NEL (Boolean) to target column B_NAT_NEL (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_COMISION_MEDICA (Boolean) to target column B_COMISION_MEDICA (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_CONSTANCIAS (Boolean) to target column B_CONSTANCIAS (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_APODERADOS (Boolean) to target column B_APODERADOS (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_PRESTAMOS (Boolean) to target column B_PRESTAMOS (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_BENEFICIARIODE (Boolean) to target column B_BENEFICIARIODE (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_ASIGNACIONDE (Boolean) to target column B_ASIGNACIONDE (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_APODERADODE (Boolean) to target column B_APODERADODE (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_INDEMNIZACIONES (Boolean) to target column B_INDEMNIZACIONES (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field N_CVE_TIPO_CIUDADANO (Integer) to target column N_CVE_TIPO_CIUDADANO (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_DESC_TIPO_CIUDADANO (String) to target column C_DESC_TIPO_CIUDADANO (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field B_ES_HALLAZGO_FISCALIZACION_PENSION (Boolean) to target column B_ES_HALLAZGO_FISCALIZACION_PENSION (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field N_CHEKSUM (Integer) to target column N_CHEKSUM (Integer) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_URL (String) to target column C_URL (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field D_FECHA_PROCESADO (Timestamp) to target column D_FECHA_PROCESADO (Timestamp) 
+2021/06/09 15:12:18 - Vertica Personas.0 - Mapping input field C_ULTIMO_PERIODO_FACTURADO_FORMAT (String) to target column C_ULTIMO_PERIODO_FACTURADO_FORMAT (Varchar) 
+2021/06/09 15:12:18 - Vertica Personas.0 - copy stmt: COPY olap.SIE_C_PERSONAS_AUX ("N_ID", TMPFILLERCOL1 FILLER VARCHAR(1000), "N_NSS" AS CAST(TMPFILLERCOL1 AS NUMERIC), "C_NUM_CEDULA", TMPFILLERCOL3 FILLER VARCHAR(1000), "N_CVE_TIPO_IDENTIFICACION" AS CAST(TMPFILLERCOL3 AS NUMERIC), "C_DESC_OTRA_IDENTIFICACION", "C_NUM_OTRA_IDENTIFICACION", "C_NOMBRE1", "C_NOMBRE2", "C_APELLIDO1", "C_APELLIDO2", "C_NOMBRE1_BUSCAR", "C_NOMBRE2_BUSCAR", "C_APELLIDO1_BUSCAR", "C_APELLIDO2_BUSCAR", "C_NOMBRES_APELLIDOS", "C_APELLIDOS_NOMBRES", "C_APELLIDOS_NOMBRES_CON_COMA", "C_SEXO", "D_FECHA_NACIMIENTO", "N_EDAD_ANHO", "N_EDAD_MESES", "C_CVE_EDO_CIVIL", "C_DESC_EDO_CIVIL", "C_CVE_PAIS", "C_DESC_PAIS", "C_CVE_DEPARTAMENTO_NAC", "C_DESC_DEPARTAMENTO_NAC", "C_CVE_MUNICIPIO_NAC", "C_DESC_MUNICIPIO_NAC", "C_CVE_DEPARTAMENTO_ACTUAL", "C_DESC_DEPARTAMENTO_ACTUAL", "C_CVE_MUNICIPIO_ACTUAL", "C_DESC_MUNICIPIO_ACTUAL", "N_CVE_CLASIFICACION_BARRIO", "C_CLASIFICACION_BARRIO", "N_CVE_BARRIO", "C_DESC_BARRIO", "N_CVE_DISTRITO_ZONA_SECTOR_BO", "C_DESC_DISTRITO_ZONA_SECTOR_BO", "N_CVE_MUNICIPIO_BO", "C_CVE_MUNICIPIO_ACTUAL_BO", "C_DESC_MUNICIPIO_BO", "N_CVE_DEPARTAMENTO_BO", "C_CVE_DEPARTAMENTO_ACTUAL_BO", "C_DESC_DEPARTAMENTO_BO", "C_DOMICILIO", "D_FECHA_REGISTRO", "D_FECHA_GRABACION", "D_FECHA_INSCRIPCION", "C_ESTUDIANTE", "C_DISCAPACITADO", "C_ESTATUS", "C_USR_GRABACION", "C_CVE_SUCURSAL", "C_DESC_SUCURSAL", "B_DIFUNTO", "B_TRAB_CAMPO", "N_TOTAL_SEMANAS", "N_ID_FOTOGRAFIA", TMPFILLERCOL59 FILLER VARCHAR(1000), "N_NSS_PADRE" AS CAST(TMPFILLERCOL59 AS NUMERIC), "C_NOMBRES_APELLIDOS_PADRE", TMPFILLERCOL61 FILLER VARCHAR(1000), "N_NSS_MADRE" AS CAST(TMPFILLERCOL61 AS NUMERIC), "C_NOMBRES_APELLIDOS_MADRE", "N_CVE_IPSS", "C_DESC_IPSS", "B_EN_PERCAPITA_DEL_MES", TMPFILLERCOL66 FILLER VARCHAR(1000), "N_ULTIMO_REGISTRO_PATRONAL" AS CAST(TMPFILLERCOL66 AS NUMERIC), "C_RAZON_SOCIAL_EMPLEADOR", TMPFILLERCOL68 FILLER VARCHAR(1000), "N_ULTIMA_CVE_NOMINA" AS CAST(TMPFILLERCOL68 AS NUMERIC), "C_NOMBRE_COMERCIAL_NOMINA", "N_CVE_REGIMEN_ULT_NOMINA", "C_DESC_REGIMEN_ULT_NOMINA", "C_ULTIMO_PERIODO_FACTURADO", "B_ASEGURADO", "B_PENSIONADO", "B_ES_TITULAR", "B_ES_TRABAJADOR_INSS", "B_SUBSIDIO", "B_BENEFICIARIOS", "B_SUPERVIVENCIA", "B_EXPEDIENTE", "B_CARNET_ASEGURADO", "B_CARNET_PENSIONADO", "B_CARNET_BENEFICIARIO", "B_LACTANCIA", "B_NAT_NEL", "B_COMISION_MEDICA", "B_CONSTANCIAS", "B_APODERADOS", "B_PRESTAMOS", "B_BENEFICIARIODE", "B_ASIGNACIONDE", "B_APODERADODE", "B_INDEMNIZACIONES", "N_CVE_TIPO_CIUDADANO", "C_DESC_TIPO_CIUDADANO", "B_ES_HALLAZGO_FISCALIZACION_PENSION", "N_CHEKSUM", "C_URL", "D_FECHA_PROCESADO", "C_ULTIMO_PERIODO_FACTURADO_FORMAT") FROM STDIN NATIVE ENFORCELENGTH ABORT ON ERROR DIRECT 
+2021/06/09 15:12:18 - Vertica Personas.0 - Signaling 'output done' to 0 output rowsets.
+2021/06/09 15:12:19 - Vertica-Desa - Connection to database closed!
+2021/06/09 15:12:19 - Vertica Personas.0 - Finished processing (I=0, O=2, R=2, W=2, U=0, E=0)
+2021/06/09 15:12:19 - ETL_SIE_C_PERSONA - searching for annotations
+2021/06/09 15:12:19 - ETL_SIE_C_PERSONA - no annotations found
+2021/06/09 15:12:19 - SIE_TRACE - New database connection defined
+2021/06/09 15:12:19 - SIE_TRACE - Auto commit off
+2021/06/09 15:12:19 - SIE_TRACE - Commit on database connection [SIE_TRACE]
+2021/06/09 15:12:19 - SIE_TRACE - Commit on database connection [SIE_TRACE]
+2021/06/09 15:12:19 - SIE_TRACE - Connection to database closed!
+2021/06/09 15:12:19 - JOB_SIE_C_PERSONA - Transformation lines read: 1 ( 0 lines/s); lines written: 2 ( 0 lines/s)
+2021/06/09 15:12:19 - JOB_SIE_C_PERSONA - Starting entry [Delete Data sie_c_personas]
+2021/06/09 15:12:19 - JOB_SIE_C_PERSONA - exec(2, 0, Delete Data sie_c_personas.0)
+2021/06/09 15:12:19 - Delete Data sie_c_personas - Starting job entry
+2021/06/09 15:12:19 - Delete Data sie_c_personas - Opening transformation: [/opt/sie/ETL_SIE_C_PERSONA_DELETE.ktr]
+2021/06/09 15:12:19 - Delete Data sie_c_personas - Loading transformation from XML file [/opt/sie/ETL_SIE_C_PERSONA_DELETE.ktr]
+2021/06/09 15:12:19 - Delete Data sie_c_personas - Starting transformation...(file=${ETL_DIR}/ETL_SIE_C_PERSONA_DELETE.ktr, name=Delete Data sie_c_personas, repinfo=null)
+2021/06/09 15:12:19 - Delete Data sie_c_personas - Using run configuration [Pentaho local]
+2021/06/09 15:12:19 - Delete Data sie_c_personas - Using legacy execution engine
+2021/06/09 15:12:19 - ETL_SIE_C_PERSONA_DELETE - Transformation is pre-loaded.
+2021/06/09 15:12:19 - ETL_SIE_C_PERSONA_DELETE - nr of steps to run : 1  , nr of hops : 0
+2021/06/09 15:12:19 - ETL_SIE_C_PERSONA_DELETE - Dispatching started for transformation [ETL_SIE_C_PERSONA_DELETE]
+2021/06/09 15:12:19 - ETL_SIE_C_PERSONA_DELETE - Nr of arguments detected:0 
+2021/06/09 15:12:19 - ETL_SIE_C_PERSONA_DELETE - This is not a replay transformation
+2021/06/09 15:12:19 - ETL_SIE_C_PERSONA_DELETE - I found 1 different steps to launch.
+2021/06/09 15:12:19 - ETL_SIE_C_PERSONA_DELETE - Allocating rowsets...
+2021/06/09 15:12:19 - ETL_SIE_C_PERSONA_DELETE -  Allocating rowsets for step 0 --> Deleting Data
+2021/06/09 15:12:19 - ETL_SIE_C_PERSONA_DELETE -  Allocated 0 rowsets for step 0 --> Deleting Data  
+2021/06/09 15:12:19 - ETL_SIE_C_PERSONA_DELETE - Allocating Steps & StepData...
+2021/06/09 15:12:19 - ETL_SIE_C_PERSONA_DELETE -  Transformation is about to allocate step [Deleting Data] of type [ExecSQL]
+2021/06/09 15:12:19 - ETL_SIE_C_PERSONA_DELETE -   Step has nrcopies=1
+2021/06/09 15:12:19 - Deleting Data.0 - distribution activated
+2021/06/09 15:12:19 - Deleting Data.0 - Starting allocation of buffers & new threads...
+2021/06/09 15:12:19 - Deleting Data.0 - Step info: nrinput=0 nroutput=0
+2021/06/09 15:12:19 - Deleting Data.0 - Finished dispatching
+2021/06/09 15:12:19 - ETL_SIE_C_PERSONA_DELETE -  Transformation has allocated a new step: [Deleting Data].0
+2021/06/09 15:12:19 - ETL_SIE_C_PERSONA_DELETE - This transformation can be replayed with replay date: 2021/06/09 15:12:19
+2021/06/09 15:12:19 - ETL_SIE_C_PERSONA_DELETE - Initialising 1 steps...
+2021/06/09 15:12:19 - Deleting Data.0 - Released server socket on port 0
+2021/06/09 15:12:19 - Vertica-Desa - New database connection defined
+2021/06/09 15:12:19 - Deleting Data.0 - Connected to database...
+2021/06/09 15:12:19 - Vertica-Desa - launch DDL statement: 
+2021/06/09 15:12:19 - Vertica-Desa - Delete from olap.SIE_C_PERSONAS where N_NSS in (select N_NSS from olap.SIE_C_PERSONAS_AUX)
+2021/06/09 15:12:20 - Vertica-Desa - 1 statement executed
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_DELETE - Step [Deleting Data.0] initialized flawlessly.
+2021/06/09 15:12:20 - Deleting Data.0 - Starting to run...
+2021/06/09 15:12:20 - Deleting Data.0 - Signaling 'output done' to 0 output rowsets.
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_DELETE - Transformation has allocated 1 threads and 0 rowsets.
+2021/06/09 15:12:20 - Deleting Data.0 - Finished reading query, closing connection.
+2021/06/09 15:12:20 - Vertica-Desa - Connection to database closed!
+2021/06/09 15:12:20 - Deleting Data.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_DELETE - searching for annotations
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_DELETE - no annotations found
+2021/06/09 15:12:20 - JOB_SIE_C_PERSONA - Starting entry [Insert Data in sie_c_personas from aux]
+2021/06/09 15:12:20 - JOB_SIE_C_PERSONA - exec(3, 0, Insert Data in sie_c_personas from aux.0)
+2021/06/09 15:12:20 - Insert Data in sie_c_personas from aux - Starting job entry
+2021/06/09 15:12:20 - Insert Data in sie_c_personas from aux - Opening transformation: [/opt/sie/ETL_SIE_C_PERSONA_INSERT.ktr]
+2021/06/09 15:12:20 - Insert Data in sie_c_personas from aux - Loading transformation from XML file [/opt/sie/ETL_SIE_C_PERSONA_INSERT.ktr]
+2021/06/09 15:12:20 - Insert Data in sie_c_personas from aux - Starting transformation...(file=${ETL_DIR}/ETL_SIE_C_PERSONA_INSERT.ktr, name=Insert Data in sie_c_personas from aux, repinfo=null)
+2021/06/09 15:12:20 - Insert Data in sie_c_personas from aux - Using run configuration [Pentaho local]
+2021/06/09 15:12:20 - Insert Data in sie_c_personas from aux - Using legacy execution engine
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT - Transformation is pre-loaded.
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT - nr of steps to run : 2  , nr of hops : 1
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT - Dispatching started for transformation [ETL_SIE_C_PERSONA_INSERT]
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT - Nr of arguments detected:0 
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT - This is not a replay transformation
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT - I found 2 different steps to launch.
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT - Allocating rowsets...
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT -  Allocating rowsets for step 0 --> Select Aux table
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT -   prevcopies = 1, nextcopies=1
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT - Transformation allocated new rowset [Select Aux table.0 - Vertica Bulk Loader.0]
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT -  Allocated 1 rowsets for step 0 --> Select Aux table  
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT -  Allocating rowsets for step 1 --> Vertica Bulk Loader
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT -  Allocated 1 rowsets for step 1 --> Vertica Bulk Loader  
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT - Allocating Steps & StepData...
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT -  Transformation is about to allocate step [Select Aux table] of type [TableInput]
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT -   Step has nrcopies=1
+2021/06/09 15:12:20 - Select Aux table.0 - distribution activated
+2021/06/09 15:12:20 - Select Aux table.0 - Starting allocation of buffers & new threads...
+2021/06/09 15:12:20 - Select Aux table.0 - Step info: nrinput=0 nroutput=1
+2021/06/09 15:12:20 - Select Aux table.0 - output rel. is  1:1
+2021/06/09 15:12:20 - Select Aux table.0 - Found output rowset [Select Aux table.0 - Vertica Bulk Loader.0]
+2021/06/09 15:12:20 - Select Aux table.0 - Finished dispatching
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT -  Transformation has allocated a new step: [Select Aux table].0
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT -  Transformation is about to allocate step [Vertica Bulk Loader] of type [VerticaBulkLoader]
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT -   Step has nrcopies=1
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - distribution activated
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Starting allocation of buffers & new threads...
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Step info: nrinput=1 nroutput=0
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Got previous step from [Vertica Bulk Loader] #0 --> Select Aux table
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - input rel is 1:1
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Found input rowset [Select Aux table.0 - Vertica Bulk Loader.0]
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Finished dispatching
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT -  Transformation has allocated a new step: [Vertica Bulk Loader].0
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT - This transformation can be replayed with replay date: 2021/06/09 15:12:20
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT - Initialising 2 steps...
+2021/06/09 15:12:20 - Select Aux table.0 - Released server socket on port 0
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Released server socket on port 0
+2021/06/09 15:12:20 - Vertica-Desa - New database connection defined
+2021/06/09 15:12:20 - Vertica-Desa - New database connection defined
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Connected to database [Vertica-Desa]
+2021/06/09 15:12:20 - Vertica-Desa - Auto commit off
+2021/06/09 15:12:20 - Select Aux table.0 - Connected to database...
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT - Step [Select Aux table.0] initialized flawlessly.
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT - Step [Vertica Bulk Loader.0] initialized flawlessly.
+2021/06/09 15:12:20 - Select Aux table.0 - Starting to run...
+2021/06/09 15:12:20 - Select Aux table.0 - SQL query : SELECT * FROM olap.SIE_C_PERSONAS_AUX
+2021/06/09 15:12:20 - ETL_SIE_C_PERSONA_INSERT - Transformation has allocated 2 threads and 1 rowsets.
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Starting to run...
+2021/06/09 15:12:20 - Select Aux table.0 - Signaling 'output done' to 1 output rowsets.
+2021/06/09 15:12:20 - Select Aux table.0 - Finished reading query, closing connection.
+2021/06/09 15:12:20 - Vertica-Desa - Commit on database connection [Vertica-Desa]
+2021/06/09 15:12:20 - Vertica-Desa - Connection to database closed!
+2021/06/09 15:12:20 - Select Aux table.0 - Finished processing (I=2, O=0, R=0, W=2, U=0, E=0)
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field N_ID (Integer) to target column N_ID (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field N_NSS (Integer) to target column N_NSS (Numeric) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_NUM_CEDULA (String) to target column C_NUM_CEDULA (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field N_CVE_TIPO_IDENTIFICACION (Integer) to target column N_CVE_TIPO_IDENTIFICACION (Numeric) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_DESC_OTRA_IDENTIFICACION (String) to target column C_DESC_OTRA_IDENTIFICACION (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_NUM_OTRA_IDENTIFICACION (String) to target column C_NUM_OTRA_IDENTIFICACION (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_NOMBRE1 (String) to target column C_NOMBRE1 (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_NOMBRE2 (String) to target column C_NOMBRE2 (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_APELLIDO1 (String) to target column C_APELLIDO1 (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_APELLIDO2 (String) to target column C_APELLIDO2 (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_NOMBRE1_BUSCAR (String) to target column C_NOMBRE1_BUSCAR (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_NOMBRE2_BUSCAR (String) to target column C_NOMBRE2_BUSCAR (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_APELLIDO1_BUSCAR (String) to target column C_APELLIDO1_BUSCAR (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_APELLIDO2_BUSCAR (String) to target column C_APELLIDO2_BUSCAR (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_NOMBRES_APELLIDOS (String) to target column C_NOMBRES_APELLIDOS (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_APELLIDOS_NOMBRES (String) to target column C_APELLIDOS_NOMBRES (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_APELLIDOS_NOMBRES_CON_COMA (String) to target column C_APELLIDOS_NOMBRES_CON_COMA (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_SEXO (String) to target column C_SEXO (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field D_FECHA_NACIMIENTO (Timestamp) to target column D_FECHA_NACIMIENTO (Timestamp) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field N_EDAD_ANHO (Integer) to target column N_EDAD_ANHO (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field N_EDAD_MESES (Integer) to target column N_EDAD_MESES (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_CVE_EDO_CIVIL (String) to target column C_CVE_EDO_CIVIL (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_DESC_EDO_CIVIL (String) to target column C_DESC_EDO_CIVIL (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_CVE_PAIS (String) to target column C_CVE_PAIS (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_DESC_PAIS (String) to target column C_DESC_PAIS (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_CVE_DEPARTAMENTO_NAC (String) to target column C_CVE_DEPARTAMENTO_NAC (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_DESC_DEPARTAMENTO_NAC (String) to target column C_DESC_DEPARTAMENTO_NAC (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_CVE_MUNICIPIO_NAC (String) to target column C_CVE_MUNICIPIO_NAC (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_DESC_MUNICIPIO_NAC (String) to target column C_DESC_MUNICIPIO_NAC (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_CVE_DEPARTAMENTO_ACTUAL (String) to target column C_CVE_DEPARTAMENTO_ACTUAL (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_DESC_DEPARTAMENTO_ACTUAL (String) to target column C_DESC_DEPARTAMENTO_ACTUAL (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_CVE_MUNICIPIO_ACTUAL (String) to target column C_CVE_MUNICIPIO_ACTUAL (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_DESC_MUNICIPIO_ACTUAL (String) to target column C_DESC_MUNICIPIO_ACTUAL (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field N_CVE_CLASIFICACION_BARRIO (Integer) to target column N_CVE_CLASIFICACION_BARRIO (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_CLASIFICACION_BARRIO (String) to target column C_CLASIFICACION_BARRIO (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field N_CVE_BARRIO (Integer) to target column N_CVE_BARRIO (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_DESC_BARRIO (String) to target column C_DESC_BARRIO (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field N_CVE_DISTRITO_ZONA_SECTOR_BO (Integer) to target column N_CVE_DISTRITO_ZONA_SECTOR_BO (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_DESC_DISTRITO_ZONA_SECTOR_BO (String) to target column C_DESC_DISTRITO_ZONA_SECTOR_BO (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field N_CVE_MUNICIPIO_BO (Integer) to target column N_CVE_MUNICIPIO_BO (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_CVE_MUNICIPIO_ACTUAL_BO (String) to target column C_CVE_MUNICIPIO_ACTUAL_BO (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_DESC_MUNICIPIO_BO (String) to target column C_DESC_MUNICIPIO_BO (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field N_CVE_DEPARTAMENTO_BO (Integer) to target column N_CVE_DEPARTAMENTO_BO (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_CVE_DEPARTAMENTO_ACTUAL_BO (String) to target column C_CVE_DEPARTAMENTO_ACTUAL_BO (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_DESC_DEPARTAMENTO_BO (String) to target column C_DESC_DEPARTAMENTO_BO (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_DOMICILIO (String) to target column C_DOMICILIO (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field D_FECHA_REGISTRO (Timestamp) to target column D_FECHA_REGISTRO (Timestamp) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field D_FECHA_GRABACION (Timestamp) to target column D_FECHA_GRABACION (Timestamp) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field D_FECHA_INSCRIPCION (Timestamp) to target column D_FECHA_INSCRIPCION (Timestamp) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_ESTUDIANTE (String) to target column C_ESTUDIANTE (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_DISCAPACITADO (String) to target column C_DISCAPACITADO (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_ESTATUS (String) to target column C_ESTATUS (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_USR_GRABACION (String) to target column C_USR_GRABACION (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_CVE_SUCURSAL (String) to target column C_CVE_SUCURSAL (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_DESC_SUCURSAL (String) to target column C_DESC_SUCURSAL (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_DIFUNTO (Integer) to target column B_DIFUNTO (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_TRAB_CAMPO (Integer) to target column B_TRAB_CAMPO (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field N_TOTAL_SEMANAS (Integer) to target column N_TOTAL_SEMANAS (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field N_ID_FOTOGRAFIA (Integer) to target column N_ID_FOTOGRAFIA (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field N_NSS_PADRE (Integer) to target column N_NSS_PADRE (Numeric) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_NOMBRES_APELLIDOS_PADRE (String) to target column C_NOMBRES_APELLIDOS_PADRE (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field N_NSS_MADRE (Integer) to target column N_NSS_MADRE (Numeric) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_NOMBRES_APELLIDOS_MADRE (String) to target column C_NOMBRES_APELLIDOS_MADRE (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field N_CVE_IPSS (Integer) to target column N_CVE_IPSS (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_DESC_IPSS (String) to target column C_DESC_IPSS (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_EN_PERCAPITA_DEL_MES (Integer) to target column B_EN_PERCAPITA_DEL_MES (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field N_ULTIMO_REGISTRO_PATRONAL (Integer) to target column N_ULTIMO_REGISTRO_PATRONAL (Numeric) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_RAZON_SOCIAL_EMPLEADOR (String) to target column C_RAZON_SOCIAL_EMPLEADOR (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field N_ULTIMA_CVE_NOMINA (Integer) to target column N_ULTIMA_CVE_NOMINA (Numeric) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_NOMBRE_COMERCIAL_NOMINA (String) to target column C_NOMBRE_COMERCIAL_NOMINA (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field N_CVE_REGIMEN_ULT_NOMINA (Integer) to target column N_CVE_REGIMEN_ULT_NOMINA (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_DESC_REGIMEN_ULT_NOMINA (String) to target column C_DESC_REGIMEN_ULT_NOMINA (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_ULTIMO_PERIODO_FACTURADO (String) to target column C_ULTIMO_PERIODO_FACTURADO (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_ULTIMO_PERIODO_FACTURADO_FORMAT (String) to target column C_ULTIMO_PERIODO_FACTURADO_FORMAT (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_ASEGURADO (Integer) to target column B_ASEGURADO (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_PENSIONADO (Integer) to target column B_PENSIONADO (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_ES_TITULAR (Integer) to target column B_ES_TITULAR (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_ES_TRABAJADOR_INSS (Integer) to target column B_ES_TRABAJADOR_INSS (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_SUBSIDIO (Integer) to target column B_SUBSIDIO (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_BENEFICIARIOS (Integer) to target column B_BENEFICIARIOS (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_SUPERVIVENCIA (Integer) to target column B_SUPERVIVENCIA (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_EXPEDIENTE (Integer) to target column B_EXPEDIENTE (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_CARNET_ASEGURADO (Integer) to target column B_CARNET_ASEGURADO (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_CARNET_PENSIONADO (Integer) to target column B_CARNET_PENSIONADO (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_CARNET_BENEFICIARIO (Integer) to target column B_CARNET_BENEFICIARIO (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_LACTANCIA (Integer) to target column B_LACTANCIA (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_NAT_NEL (Integer) to target column B_NAT_NEL (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_COMISION_MEDICA (Integer) to target column B_COMISION_MEDICA (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_CONSTANCIAS (Integer) to target column B_CONSTANCIAS (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_APODERADOS (Integer) to target column B_APODERADOS (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_PRESTAMOS (Integer) to target column B_PRESTAMOS (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_BENEFICIARIODE (Integer) to target column B_BENEFICIARIODE (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_ASIGNACIONDE (Integer) to target column B_ASIGNACIONDE (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_APODERADODE (Integer) to target column B_APODERADODE (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_INDEMNIZACIONES (Integer) to target column B_INDEMNIZACIONES (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field N_CVE_TIPO_CIUDADANO (Integer) to target column N_CVE_TIPO_CIUDADANO (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_DESC_TIPO_CIUDADANO (String) to target column C_DESC_TIPO_CIUDADANO (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field B_ES_HALLAZGO_FISCALIZACION_PENSION (Integer) to target column B_ES_HALLAZGO_FISCALIZACION_PENSION (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field N_CHEKSUM (Integer) to target column N_CHEKSUM (Integer) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field C_URL (String) to target column C_URL (Varchar) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - Mapping input field D_FECHA_PROCESADO (Timestamp) to target column D_FECHA_PROCESADO (Timestamp) 
+2021/06/09 15:12:20 - Vertica Bulk Loader.0 - copy stmt: COPY olap.SIE_C_PERSONAS ("N_ID", TMPFILLERCOL1 FILLER VARCHAR(1000), "N_NSS" AS CAST(TMPFILLERCOL1 AS NUMERIC), "C_NUM_CEDULA", TMPFILLERCOL3 FILLER VARCHAR(1000), "N_CVE_TIPO_IDENTIFICACION" AS CAST(TMPFILLERCOL3 AS NUMERIC), "C_DESC_OTRA_IDENTIFICACION", "C_NUM_OTRA_IDENTIFICACION", "C_NOMBRE1", "C_NOMBRE2", "C_APELLIDO1", "C_APELLIDO2", "C_NOMBRE1_BUSCAR", "C_NOMBRE2_BUSCAR", "C_APELLIDO1_BUSCAR", "C_APELLIDO2_BUSCAR", "C_NOMBRES_APELLIDOS", "C_APELLIDOS_NOMBRES", "C_APELLIDOS_NOMBRES_CON_COMA", "C_SEXO", "D_FECHA_NACIMIENTO", "N_EDAD_ANHO", "N_EDAD_MESES", "C_CVE_EDO_CIVIL", "C_DESC_EDO_CIVIL", "C_CVE_PAIS", "C_DESC_PAIS", "C_CVE_DEPARTAMENTO_NAC", "C_DESC_DEPARTAMENTO_NAC", "C_CVE_MUNICIPIO_NAC", "C_DESC_MUNICIPIO_NAC", "C_CVE_DEPARTAMENTO_ACTUAL", "C_DESC_DEPARTAMENTO_ACTUAL", "C_CVE_MUNICIPIO_ACTUAL", "C_DESC_MUNICIPIO_ACTUAL", "N_CVE_CLASIFICACION_BARRIO", "C_CLASIFICACION_BARRIO", "N_CVE_BARRIO", "C_DESC_BARRIO", "N_CVE_DISTRITO_ZONA_SECTOR_BO", "C_DESC_DISTRITO_ZONA_SECTOR_BO", "N_CVE_MUNICIPIO_BO", "C_CVE_MUNICIPIO_ACTUAL_BO", "C_DESC_MUNICIPIO_BO", "N_CVE_DEPARTAMENTO_BO", "C_CVE_DEPARTAMENTO_ACTUAL_BO", "C_DESC_DEPARTAMENTO_BO", "C_DOMICILIO", "D_FECHA_REGISTRO", "D_FECHA_GRABACION", "D_FECHA_INSCRIPCION", "C_ESTUDIANTE", "C_DISCAPACITADO", "C_ESTATUS", "C_USR_GRABACION", "C_CVE_SUCURSAL", "C_DESC_SUCURSAL", "B_DIFUNTO", "B_TRAB_CAMPO", "N_TOTAL_SEMANAS", "N_ID_FOTOGRAFIA", TMPFILLERCOL59 FILLER VARCHAR(1000), "N_NSS_PADRE" AS CAST(TMPFILLERCOL59 AS NUMERIC), "C_NOMBRES_APELLIDOS_PADRE", TMPFILLERCOL61 FILLER VARCHAR(1000), "N_NSS_MADRE" AS CAST(TMPFILLERCOL61 AS NUMERIC), "C_NOMBRES_APELLIDOS_MADRE", "N_CVE_IPSS", "C_DESC_IPSS", "B_EN_PERCAPITA_DEL_MES", TMPFILLERCOL66 FILLER VARCHAR(1000), "N_ULTIMO_REGISTRO_PATRONAL" AS CAST(TMPFILLERCOL66 AS NUMERIC), "C_RAZON_SOCIAL_EMPLEADOR", TMPFILLERCOL68 FILLER VARCHAR(1000), "N_ULTIMA_CVE_NOMINA" AS CAST(TMPFILLERCOL68 AS NUMERIC), "C_NOMBRE_COMERCIAL_NOMINA", "N_CVE_REGIMEN_ULT_NOMINA", "C_DESC_REGIMEN_ULT_NOMINA", "C_ULTIMO_PERIODO_FACTURADO", "C_ULTIMO_PERIODO_FACTURADO_FORMAT", "B_ASEGURADO", "B_PENSIONADO", "B_ES_TITULAR", "B_ES_TRABAJADOR_INSS", "B_SUBSIDIO", "B_BENEFICIARIOS", "B_SUPERVIVENCIA", "B_EXPEDIENTE", "B_CARNET_ASEGURADO", "B_CARNET_PENSIONADO", "B_CARNET_BENEFICIARIO", "B_LACTANCIA", "B_NAT_NEL", "B_COMISION_MEDICA", "B_CONSTANCIAS", "B_APODERADOS", "B_PRESTAMOS", "B_BENEFICIARIODE", "B_ASIGNACIONDE", "B_APODERADODE", "B_INDEMNIZACIONES", "N_CVE_TIPO_CIUDADANO", "C_DESC_TIPO_CIUDADANO", "B_ES_HALLAZGO_FISCALIZACION_PENSION", "N_CHEKSUM", "C_URL", "D_FECHA_PROCESADO") FROM STDIN NATIVE ENFORCELENGTH ABORT ON ERROR DIRECT 
+2021/06/09 15:12:21 - Vertica Bulk Loader.0 - Signaling 'output done' to 0 output rowsets.
+2021/06/09 15:12:21 - Vertica-Desa - Connection to database closed!
+2021/06/09 15:12:21 - Vertica Bulk Loader.0 - Finished processing (I=0, O=2, R=2, W=2, U=0, E=0)
+2021/06/09 15:12:21 - ETL_SIE_C_PERSONA_INSERT - searching for annotations
+2021/06/09 15:12:21 - ETL_SIE_C_PERSONA_INSERT - no annotations found
+2021/06/09 15:12:21 - JOB_SIE_C_PERSONA - Starting entry [Clean table aux]
+2021/06/09 15:12:21 - JOB_SIE_C_PERSONA - exec(4, 0, Clean table aux.0)
+2021/06/09 15:12:21 - Clean table aux - Starting job entry
+2021/06/09 15:12:21 - Clean table aux - Opening transformation: [/opt/sie/ETL_SIE_C_PERSONA_CLEAN_AUX.ktr]
+2021/06/09 15:12:21 - Clean table aux - Loading transformation from XML file [/opt/sie/ETL_SIE_C_PERSONA_CLEAN_AUX.ktr]
+2021/06/09 15:12:21 - Clean table aux - Starting transformation...(file=${ETL_DIR}/ETL_SIE_C_PERSONA_CLEAN_AUX.ktr, name=Clean table aux, repinfo=null)
+2021/06/09 15:12:21 - Clean table aux - Using run configuration [Pentaho local]
+2021/06/09 15:12:21 - Clean table aux - Using legacy execution engine
+2021/06/09 15:12:21 - ETL_SIE_C_PERSONA_CLEAN_AUX - Transformation is pre-loaded.
+2021/06/09 15:12:21 - ETL_SIE_C_PERSONA_CLEAN_AUX - nr of steps to run : 1  , nr of hops : 0
+2021/06/09 15:12:21 - ETL_SIE_C_PERSONA_CLEAN_AUX - Dispatching started for transformation [ETL_SIE_C_PERSONA_CLEAN_AUX]
+2021/06/09 15:12:21 - ETL_SIE_C_PERSONA_CLEAN_AUX - Nr of arguments detected:0 
+2021/06/09 15:12:21 - ETL_SIE_C_PERSONA_CLEAN_AUX - This is not a replay transformation
+2021/06/09 15:12:21 - ETL_SIE_C_PERSONA_CLEAN_AUX - I found 1 different steps to launch.
+2021/06/09 15:12:21 - ETL_SIE_C_PERSONA_CLEAN_AUX - Allocating rowsets...
+2021/06/09 15:12:21 - ETL_SIE_C_PERSONA_CLEAN_AUX -  Allocating rowsets for step 0 --> Delete Personas Aux
+2021/06/09 15:12:21 - ETL_SIE_C_PERSONA_CLEAN_AUX -  Allocated 0 rowsets for step 0 --> Delete Personas Aux  
+2021/06/09 15:12:21 - ETL_SIE_C_PERSONA_CLEAN_AUX - Allocating Steps & StepData...
+2021/06/09 15:12:21 - ETL_SIE_C_PERSONA_CLEAN_AUX -  Transformation is about to allocate step [Delete Personas Aux] of type [ExecSQL]
+2021/06/09 15:12:21 - ETL_SIE_C_PERSONA_CLEAN_AUX -   Step has nrcopies=1
+2021/06/09 15:12:21 - Delete Personas Aux.0 - distribution activated
+2021/06/09 15:12:21 - Delete Personas Aux.0 - Starting allocation of buffers & new threads...
+2021/06/09 15:12:21 - Delete Personas Aux.0 - Step info: nrinput=0 nroutput=0
+2021/06/09 15:12:21 - Delete Personas Aux.0 - Finished dispatching
+2021/06/09 15:12:21 - ETL_SIE_C_PERSONA_CLEAN_AUX -  Transformation has allocated a new step: [Delete Personas Aux].0
+2021/06/09 15:12:21 - ETL_SIE_C_PERSONA_CLEAN_AUX - This transformation can be replayed with replay date: 2021/06/09 15:12:21
+2021/06/09 15:12:21 - ETL_SIE_C_PERSONA_CLEAN_AUX - Initialising 1 steps...
+2021/06/09 15:12:21 - Delete Personas Aux.0 - Released server socket on port 0
+2021/06/09 15:12:21 - Vertica-Desa - New database connection defined
+2021/06/09 15:12:21 - Delete Personas Aux.0 - Connected to database...
+2021/06/09 15:12:21 - Vertica-Desa - launch DDL statement: 
+2021/06/09 15:12:21 - Vertica-Desa - DELETE FROM olap.SIE_C_PERSONAS_AUX
+2021/06/09 15:12:21 - Vertica-Desa - 1 statement executed
+2021/06/09 15:12:21 - ETL_SIE_C_PERSONA_CLEAN_AUX - Step [Delete Personas Aux.0] initialized flawlessly.
+2021/06/09 15:12:21 - Delete Personas Aux.0 - Starting to run...
+2021/06/09 15:12:21 - ETL_SIE_C_PERSONA_CLEAN_AUX - Transformation has allocated 1 threads and 0 rowsets.
+2021/06/09 15:12:21 - Delete Personas Aux.0 - Signaling 'output done' to 0 output rowsets.
+2021/06/09 15:12:21 - Delete Personas Aux.0 - Finished reading query, closing connection.
+2021/06/09 15:12:21 - Vertica-Desa - Connection to database closed!
+2021/06/09 15:12:21 - Delete Personas Aux.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2021/06/09 15:12:21 - ETL_SIE_C_PERSONA_CLEAN_AUX - searching for annotations
+2021/06/09 15:12:21 - ETL_SIE_C_PERSONA_CLEAN_AUX - no annotations found
+2021/06/09 15:12:21 - JOB_SIE_C_PERSONA - Finished job entry [Clean table aux] (result=[true])
+2021/06/09 15:12:21 - JOB_SIE_C_PERSONA - Finished job entry [Insert Data in sie_c_personas from aux] (result=[true])
+2021/06/09 15:12:21 - JOB_SIE_C_PERSONA - Finished job entry [Delete Data sie_c_personas] (result=[true])
+2021/06/09 15:12:21 - JOB_SIE_C_PERSONA - Finished job entry [Load in table aux] (result=[true])
+2021/06/09 15:12:21 - JOB_SIE_C_PERSONA - Job execution finished
+2021/06/09 15:12:21 - Kitchen - Finished!
+2021/06/09 15:12:21 - Kitchen - Start=2021/06/09 15:12:05.620, Stop=2021/06/09 15:12:21.674
+2021/06/09 15:12:21 - Kitchen - Processing ended after 16 seconds.
+2021/06/09 15:12:21 - Kitchen - Logging is at level : Debug
+2021/06/09 15:12:21 - Kitchen - Start of run.
+2021/06/09 15:12:21 - Kitchen - Allocate new job.
+2021/06/09 15:12:21 - Kitchen - Parsing command line options.
+2021/06/09 15:12:30 - JOB_SIE_C_PERSONA - Start of job execution
+2021/06/09 15:12:30 - JOB_SIE_C_PERSONA - exec(0, 0, START.0)
+2021/06/09 15:12:30 - START - Starting job entry
+2021/06/09 15:12:30 - JOB_SIE_C_PERSONA - Starting entry [Load in table aux]
+2021/06/09 15:12:30 - JOB_SIE_C_PERSONA - exec(1, 0, Load in table aux.0)
+2021/06/09 15:12:30 - Load in table aux - Starting job entry
+2021/06/09 15:12:30 - Load in table aux - Opening transformation: [/opt/sie/ETL_SIE_C_PERSONA.ktr]
+2021/06/09 15:12:30 - Load in table aux - Loading transformation from XML file [/opt/sie/ETL_SIE_C_PERSONA.ktr]
+2021/06/09 15:12:30 - Load in table aux - Starting transformation...(file=${ETL_DIR}/ETL_SIE_C_PERSONA.ktr, name=Load in table aux, repinfo=null)
+2021/06/09 15:12:30 - Load in table aux - Using run configuration [Pentaho local]
+2021/06/09 15:12:30 - Load in table aux - Using legacy execution engine
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA - Transformation is pre-loaded.
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA - nr of steps to run : 4  , nr of hops : 3
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA - Dispatching started for transformation [ETL_SIE_C_PERSONA]
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA - Nr of arguments detected:0 
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA - This is not a replay transformation
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA - I found 3 different steps to launch.
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA - Allocating rowsets...
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA -  Allocating rowsets for step 0 --> Read Data
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA -   prevcopies = 1, nextcopies=1
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA - Transformation allocated new rowset [Read Data.0 - Vertica Personas.0]
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA -  Allocated 1 rowsets for step 0 --> Read Data  
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA -  Allocating rowsets for step 1 --> Vertica Personas
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA -  Allocated 1 rowsets for step 1 --> Vertica Personas  
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA -  Allocating rowsets for step 2 --> Get System Info
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA -   prevcopies = 1, nextcopies=1
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA - Transformation allocated new rowset [Get System Info.0 - Read Data.0]
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA -  Allocated 2 rowsets for step 2 --> Get System Info  
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA - Allocating Steps & StepData...
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA -  Transformation is about to allocate step [Read Data] of type [TableInput]
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA -   Step has nrcopies=1
+2021/06/09 15:12:30 - Read Data.0 - distribution activated
+2021/06/09 15:12:30 - Read Data.0 - Starting allocation of buffers & new threads...
+2021/06/09 15:12:30 - Read Data.0 - Step info: nrinput=1 nroutput=1
+2021/06/09 15:12:30 - Read Data.0 - Got previous step from [Read Data] #0 --> Get System Info
+2021/06/09 15:12:30 - Read Data.0 - input rel is 1:1
+2021/06/09 15:12:30 - Read Data.0 - Found input rowset [Get System Info.0 - Read Data.0]
+2021/06/09 15:12:30 - Read Data.0 - output rel. is  1:1
+2021/06/09 15:12:30 - Read Data.0 - Found output rowset [Read Data.0 - Vertica Personas.0]
+2021/06/09 15:12:30 - Read Data.0 - Finished dispatching
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA -  Transformation has allocated a new step: [Read Data].0
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA -  Transformation is about to allocate step [Vertica Personas] of type [VerticaBulkLoader]
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA -   Step has nrcopies=1
+2021/06/09 15:12:30 - Vertica Personas.0 - distribution activated
+2021/06/09 15:12:30 - Vertica Personas.0 - Starting allocation of buffers & new threads...
+2021/06/09 15:12:30 - Vertica Personas.0 - Step info: nrinput=1 nroutput=0
+2021/06/09 15:12:30 - Vertica Personas.0 - Got previous step from [Vertica Personas] #0 --> Read Data
+2021/06/09 15:12:30 - Vertica Personas.0 - input rel is 1:1
+2021/06/09 15:12:30 - Vertica Personas.0 - Found input rowset [Read Data.0 - Vertica Personas.0]
+2021/06/09 15:12:30 - Vertica Personas.0 - Finished dispatching
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA -  Transformation has allocated a new step: [Vertica Personas].0
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA -  Transformation is about to allocate step [Get System Info] of type [SystemInfo]
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA -   Step has nrcopies=1
+2021/06/09 15:12:30 - Get System Info.0 - distribution activated
+2021/06/09 15:12:30 - Get System Info.0 - Starting allocation of buffers & new threads...
+2021/06/09 15:12:30 - Get System Info.0 - Step info: nrinput=0 nroutput=1
+2021/06/09 15:12:30 - Get System Info.0 - output rel. is  1:1
+2021/06/09 15:12:30 - Get System Info.0 - Found output rowset [Get System Info.0 - Read Data.0]
+2021/06/09 15:12:30 - Get System Info.0 - Finished dispatching
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA -  Transformation has allocated a new step: [Get System Info].0
+2021/06/09 15:12:30 - SIE_TRACE - New database connection defined
+2021/06/09 15:12:30 - ETL_SIE_C_PERSONA - Opening log connection [SIE_TRACE]
+2021/06/09 15:12:31 - SIE_TRACE - Auto commit off
+2021/06/09 15:12:31 - SIE_TRACE - Auto commit off
+2021/06/09 15:12:31 - SIE_TRACE - launch SELECT statement: 
+2021/06/09 15:12:31 - SIE_TRACE - SELECT top 0 * FROM dbo.SIE_R_BITACORA_ACTUALIZACION_SIE_C_PERSONA WITH (UPDLOCK, HOLDLOCK)
+2021/06/09 15:12:31 - SIE_TRACE - 1 statement executed
+2021/06/09 15:12:31 - ETL_SIE_C_PERSONA - Start date found from previous log entry: 2021-06-09 15:12:15.817
+2021/06/09 15:12:31 - ETL_SIE_C_PERSONA - This transformation can be replayed with replay date: 2021/06/09 15:12:30
+2021/06/09 15:12:31 - SIE_TRACE - Preparing statement: 
+2021/06/09 15:12:31 - SIE_TRACE - INSERT INTO dbo.SIE_R_BITACORA_ACTUALIZACION_SIE_C_PERSONA (ID_BATCH, CHANNEL_ID, TRANSNAME, STATUS, LINES_READ, LINES_WRITTEN, LINES_UPDATED, LINES_INPUT, LINES_OUTPUT, LINES_REJECTED, ERRORS, STARTDATE, ENDDATE, LOGDATE, DEPDATE, REPLAYDATE) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2021/06/09 15:12:31 - SIE_TRACE - Commit on database connection [SIE_TRACE]
+2021/06/09 15:12:31 - SIE_TRACE - Commit on database connection [SIE_TRACE]
+2021/06/09 15:12:31 - SIE_TRACE - Connection to database closed!
+2021/06/09 15:12:31 - ETL_SIE_C_PERSONA - Initialising 3 steps...
+2021/06/09 15:12:31 - Read Data.0 - Released server socket on port 0
+2021/06/09 15:12:31 - Vertica Personas.0 - Released server socket on port 0
+2021/06/09 15:12:31 - Get System Info.0 - Released server socket on port 0
+2021/06/09 15:12:31 - SIE_TEMPS - New database connection defined
+2021/06/09 15:12:31 - Vertica-Desa - New database connection defined
+2021/06/09 15:12:31 - SIE_TEMPS - Auto commit off
+2021/06/09 15:12:31 - Read Data.0 - Connected to database...
+2021/06/09 15:12:31 - Vertica Personas.0 - Connected to database [Vertica-Desa]
+2021/06/09 15:12:31 - ETL_SIE_C_PERSONA - Step [Read Data.0] initialized flawlessly.
+2021/06/09 15:12:31 - ETL_SIE_C_PERSONA - Step [Vertica Personas.0] initialized flawlessly.
+2021/06/09 15:12:31 - ETL_SIE_C_PERSONA - Step [Get System Info.0] initialized flawlessly.
+2021/06/09 15:12:31 - Read Data.0 - Starting to run...
+2021/06/09 15:12:31 - Vertica Personas.0 - Starting to run...
+2021/06/09 15:12:31 - Get System Info.0 - Starting to run...
+2021/06/09 15:12:31 - Read Data.0 - Reading query parameters from stream [Get System Info]
+2021/06/09 15:12:31 - Read Data.0 - Reading from step [Get System Info]
+2021/06/09 15:12:31 - ETL_SIE_C_PERSONA - Transformation has allocated 3 threads and 2 rowsets.
+2021/06/09 15:12:31 - Get System Info.0 - Signaling 'output done' to 1 output rowsets.
+2021/06/09 15:12:31 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2021/06/09 15:12:31 - Read Data.0 - Query parameters found = [2021/06/09 15:12:15.817], [2021/06/09 15:12:30.917]
+2021/06/09 15:12:31 - Read Data.0 - SQL query : SELECT
+2021/06/09 15:12:31 - Read Data.0 - 		 P.N_ID
+2021/06/09 15:12:31 - Read Data.0 - 		,P.N_NSS
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_NUM_CEDULA
+2021/06/09 15:12:31 - Read Data.0 - 		,P.N_CVE_TIPO_IDENTIFICACION
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_DESC_OTRA_IDENTIFICACION
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_NUM_OTRA_IDENTIFICACION
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_NOMBRE1
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_NOMBRE2
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_APELLIDO1
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_APELLIDO2
+2021/06/09 15:12:31 - Read Data.0 - 		,[SIE_TEMPS].[dbo].FN_WILDCARD_NOMBRES(C_NOMBRE1) AS C_NOMBRE1_BUSCAR
+2021/06/09 15:12:31 - Read Data.0 - 		,[SIE_TEMPS].[dbo].FN_WILDCARD_NOMBRES(C_NOMBRE2) AS C_NOMBRE2_BUSCAR
+2021/06/09 15:12:31 - Read Data.0 - 		,[SIE_TEMPS].[dbo].FN_WILDCARD_NOMBRES(C_APELLIDO1) AS C_APELLIDO1_BUSCAR
+2021/06/09 15:12:31 - Read Data.0 - 		,[SIE_TEMPS].[dbo].FN_WILDCARD_NOMBRES(C_APELLIDO2) AS C_APELLIDO2_BUSCAR
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_NOMBRES_APELLIDOS
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_APELLIDOS_NOMBRES
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_APELLIDOS_NOMBRES_CON_COMA
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_SEXO
+2021/06/09 15:12:31 - Read Data.0 - 		,cast(P.D_FECHA_NACIMIENTO as datetime) D_FECHA_NACIMIENTO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.N_EDAD_ANHO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.N_EDAD_MESES
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_CVE_EDO_CIVIL
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_DESC_EDO_CIVIL
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_CVE_PAIS
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_DESC_PAIS
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_CVE_DEPARTAMENTO_NAC
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_DESC_DEPARTAMENTO_NAC
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_CVE_MUNICIPIO_NAC
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_DESC_MUNICIPIO_NAC
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_CVE_DEPARTAMENTO_ACTUAL
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_DESC_DEPARTAMENTO_ACTUAL
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_CVE_MUNICIPIO_ACTUAL
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_DESC_MUNICIPIO_ACTUAL
+2021/06/09 15:12:31 - Read Data.0 - 		,P.N_CVE_CLASIFICACION_BARRIO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_CLASIFICACION_BARRIO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.N_CVE_BARRIO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_DESC_BARRIO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.N_CVE_DISTRITO_ZONA_SECTOR_BO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_DESC_DISTRITO_ZONA_SECTOR_BO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.N_CVE_MUNICIPIO_BO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_CVE_MUNICIPIO_ACTUAL_BO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_DESC_MUNICIPIO_BO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.N_CVE_DEPARTAMENTO_BO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_CVE_DEPARTAMENTO_ACTUAL_BO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_DESC_DEPARTAMENTO_BO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_DOMICILIO
+2021/06/09 15:12:31 - Read Data.0 - 		,cast(P.D_FECHA_REGISTRO as datetime) D_FECHA_REGISTRO
+2021/06/09 15:12:31 - Read Data.0 - 		,cast(P.D_FECHA_GRABACION as datetime) D_FECHA_GRABACION
+2021/06/09 15:12:31 - Read Data.0 - 		,cast(P.D_FECHA_INSCRIPCION as datetime) D_FECHA_INSCRIPCION
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_ESTUDIANTE
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_DISCAPACITADO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_ESTATUS
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_USR_GRABACION
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_CVE_SUCURSAL
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_DESC_SUCURSAL
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_DIFUNTO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_TRAB_CAMPO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.N_TOTAL_SEMANAS
+2021/06/09 15:12:31 - Read Data.0 - 		,P.N_ID_FOTOGRAFIA
+2021/06/09 15:12:31 - Read Data.0 - 		,P.N_NSS_PADRE
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_NOMBRES_APELLIDOS_PADRE
+2021/06/09 15:12:31 - Read Data.0 - 		,P.N_NSS_MADRE
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_NOMBRES_APELLIDOS_MADRE
+2021/06/09 15:12:31 - Read Data.0 - 		,P.N_CVE_IPSS
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_DESC_IPSS
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_EN_PERCAPITA_DEL_MES
+2021/06/09 15:12:31 - Read Data.0 - 		,P.N_ULTIMO_REGISTRO_PATRONAL
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_RAZON_SOCIAL_EMPLEADOR
+2021/06/09 15:12:31 - Read Data.0 - 		,P.N_ULTIMA_CVE_NOMINA
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_NOMBRE_COMERCIAL_NOMINA
+2021/06/09 15:12:31 - Read Data.0 - 		,P.N_CVE_REGIMEN_ULT_NOMINA
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_DESC_REGIMEN_ULT_NOMINA
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_ULTIMO_PERIODO_FACTURADO
+2021/06/09 15:12:31 - Read Data.0 -         ,cast(DateName(M, DateAdd(M, cast(LEFT(P.C_ULTIMO_PERIODO_FACTURADO,2) AS int), -1)) as char(3)) + ' ' + RIGHT(P.C_ULTIMO_PERIODO_FACTURADO,4) C_ULTIMO_PERIODO_FACTURADO_FORMAT 
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_ASEGURADO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_PENSIONADO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_ES_TITULAR
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_ES_TRABAJADOR_INSS
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_SUBSIDIO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_BENEFICIARIOS
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_SUPERVIVENCIA
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_EXPEDIENTE
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_CARNET_ASEGURADO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_CARNET_PENSIONADO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_CARNET_BENEFICIARIO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_LACTANCIA
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_NAT_NEL
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_COMISION_MEDICA
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_CONSTANCIAS
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_APODERADOS
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_PRESTAMOS
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_BENEFICIARIODE
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_ASIGNACIONDE
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_APODERADODE
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_INDEMNIZACIONES
+2021/06/09 15:12:31 - Read Data.0 - 		,P.N_CVE_TIPO_CIUDADANO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.C_DESC_TIPO_CIUDADANO
+2021/06/09 15:12:31 - Read Data.0 - 		,P.B_ES_HALLAZGO_FISCALIZACION_PENSION
+2021/06/09 15:12:31 - Read Data.0 - 		,P.N_CHEKSUM
+2021/06/09 15:12:31 - Read Data.0 - 		,DOC.C_URL
+2021/06/09 15:12:31 - Read Data.0 - 		,cast(P.D_FECHA_PROCESADO as datetime) D_FECHA_PROCESADO
+2021/06/09 15:12:31 - Read Data.0 - FROM	SIE_TEMPS.dbo.SIE_C_PERSONA P
+2021/06/09 15:12:31 - Read Data.0 - 		LEFT JOIN [SIE_IMAGENES].[dbo].[SIE_ADD_DOCUMENTOS] DOC
+2021/06/09 15:12:31 - Read Data.0 - 		ON P.N_ID_FOTOGRAFIA = DOC.N_ID_DOCUMENTO
+2021/06/09 15:12:31 - Read Data.0 - WHERE P.D_FECHA_PROCESADO  >=? AND P.D_FECHA_PROCESADO <? 
+2021/06/09 15:12:33 - Read Data.0 - Signaling 'output done' to 1 output rowsets.
+2021/06/09 15:12:33 - Read Data.0 - Finished reading query, closing connection.
+2021/06/09 15:12:33 - SIE_TEMPS - Commit on database connection [SIE_TEMPS]
+2021/06/09 15:12:33 - Vertica Personas.0 - Signaling 'output done' to 0 output rowsets.
+2021/06/09 15:12:33 - SIE_TEMPS - Connection to database closed!
+2021/06/09 15:12:33 - Vertica-Desa - Connection to database closed!
+2021/06/09 15:12:33 - Read Data.0 - Finished processing (I=0, O=0, R=1, W=0, U=0, E=0)
+2021/06/09 15:12:33 - Vertica Personas.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=0)
+2021/06/09 15:12:33 - ETL_SIE_C_PERSONA - searching for annotations
+2021/06/09 15:12:33 - ETL_SIE_C_PERSONA - no annotations found
+2021/06/09 15:12:33 - SIE_TRACE - New database connection defined
+2021/06/09 15:12:33 - SIE_TRACE - Auto commit off
+2021/06/09 15:12:33 - SIE_TRACE - Commit on database connection [SIE_TRACE]
+2021/06/09 15:12:33 - SIE_TRACE - Commit on database connection [SIE_TRACE]
+2021/06/09 15:12:33 - SIE_TRACE - Connection to database closed!
+2021/06/09 15:12:33 - JOB_SIE_C_PERSONA - Transformation lines read: 1 ( 0 lines/s)
+2021/06/09 15:12:33 - JOB_SIE_C_PERSONA - Starting entry [Delete Data sie_c_personas]
+2021/06/09 15:12:33 - JOB_SIE_C_PERSONA - exec(2, 0, Delete Data sie_c_personas.0)
+2021/06/09 15:12:33 - Delete Data sie_c_personas - Starting job entry
+2021/06/09 15:12:33 - Delete Data sie_c_personas - Opening transformation: [/opt/sie/ETL_SIE_C_PERSONA_DELETE.ktr]
+2021/06/09 15:12:33 - Delete Data sie_c_personas - Loading transformation from XML file [/opt/sie/ETL_SIE_C_PERSONA_DELETE.ktr]
+2021/06/09 15:12:33 - Delete Data sie_c_personas - Starting transformation...(file=${ETL_DIR}/ETL_SIE_C_PERSONA_DELETE.ktr, name=Delete Data sie_c_personas, repinfo=null)
+2021/06/09 15:12:33 - Delete Data sie_c_personas - Using run configuration [Pentaho local]
+2021/06/09 15:12:33 - Delete Data sie_c_personas - Using legacy execution engine
+2021/06/09 15:12:33 - ETL_SIE_C_PERSONA_DELETE - Transformation is pre-loaded.
+2021/06/09 15:12:33 - ETL_SIE_C_PERSONA_DELETE - nr of steps to run : 1  , nr of hops : 0
+2021/06/09 15:12:33 - ETL_SIE_C_PERSONA_DELETE - Dispatching started for transformation [ETL_SIE_C_PERSONA_DELETE]
+2021/06/09 15:12:33 - ETL_SIE_C_PERSONA_DELETE - Nr of arguments detected:0 
+2021/06/09 15:12:33 - ETL_SIE_C_PERSONA_DELETE - This is not a replay transformation
+2021/06/09 15:12:33 - ETL_SIE_C_PERSONA_DELETE - I found 1 different steps to launch.
+2021/06/09 15:12:33 - ETL_SIE_C_PERSONA_DELETE - Allocating rowsets...
+2021/06/09 15:12:33 - ETL_SIE_C_PERSONA_DELETE -  Allocating rowsets for step 0 --> Deleting Data
+2021/06/09 15:12:33 - ETL_SIE_C_PERSONA_DELETE -  Allocated 0 rowsets for step 0 --> Deleting Data  
+2021/06/09 15:12:33 - ETL_SIE_C_PERSONA_DELETE - Allocating Steps & StepData...
+2021/06/09 15:12:33 - ETL_SIE_C_PERSONA_DELETE -  Transformation is about to allocate step [Deleting Data] of type [ExecSQL]
+2021/06/09 15:12:33 - ETL_SIE_C_PERSONA_DELETE -   Step has nrcopies=1
+2021/06/09 15:12:33 - Deleting Data.0 - distribution activated
+2021/06/09 15:12:33 - Deleting Data.0 - Starting allocation of buffers & new threads...
+2021/06/09 15:12:33 - Deleting Data.0 - Step info: nrinput=0 nroutput=0
+2021/06/09 15:12:33 - Deleting Data.0 - Finished dispatching
+2021/06/09 15:12:33 - ETL_SIE_C_PERSONA_DELETE -  Transformation has allocated a new step: [Deleting Data].0
+2021/06/09 15:12:33 - ETL_SIE_C_PERSONA_DELETE - This transformation can be replayed with replay date: 2021/06/09 15:12:33
+2021/06/09 15:12:33 - ETL_SIE_C_PERSONA_DELETE - Initialising 1 steps...
+2021/06/09 15:12:33 - Deleting Data.0 - Released server socket on port 0
+2021/06/09 15:12:33 - Vertica-Desa - New database connection defined
+2021/06/09 15:12:33 - Deleting Data.0 - Connected to database...
+2021/06/09 15:12:33 - Vertica-Desa - launch DDL statement: 
+2021/06/09 15:12:33 - Vertica-Desa - Delete from olap.SIE_C_PERSONAS where N_NSS in (select N_NSS from olap.SIE_C_PERSONAS_AUX)
+2021/06/09 15:12:34 - Vertica-Desa - 1 statement executed
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_DELETE - Step [Deleting Data.0] initialized flawlessly.
+2021/06/09 15:12:34 - Deleting Data.0 - Starting to run...
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_DELETE - Transformation has allocated 1 threads and 0 rowsets.
+2021/06/09 15:12:34 - Deleting Data.0 - Signaling 'output done' to 0 output rowsets.
+2021/06/09 15:12:34 - Deleting Data.0 - Finished reading query, closing connection.
+2021/06/09 15:12:34 - Vertica-Desa - Connection to database closed!
+2021/06/09 15:12:34 - Deleting Data.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_DELETE - searching for annotations
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_DELETE - no annotations found
+2021/06/09 15:12:34 - JOB_SIE_C_PERSONA - Starting entry [Insert Data in sie_c_personas from aux]
+2021/06/09 15:12:34 - JOB_SIE_C_PERSONA - exec(3, 0, Insert Data in sie_c_personas from aux.0)
+2021/06/09 15:12:34 - Insert Data in sie_c_personas from aux - Starting job entry
+2021/06/09 15:12:34 - Insert Data in sie_c_personas from aux - Opening transformation: [/opt/sie/ETL_SIE_C_PERSONA_INSERT.ktr]
+2021/06/09 15:12:34 - Insert Data in sie_c_personas from aux - Loading transformation from XML file [/opt/sie/ETL_SIE_C_PERSONA_INSERT.ktr]
+2021/06/09 15:12:34 - Insert Data in sie_c_personas from aux - Starting transformation...(file=${ETL_DIR}/ETL_SIE_C_PERSONA_INSERT.ktr, name=Insert Data in sie_c_personas from aux, repinfo=null)
+2021/06/09 15:12:34 - Insert Data in sie_c_personas from aux - Using run configuration [Pentaho local]
+2021/06/09 15:12:34 - Insert Data in sie_c_personas from aux - Using legacy execution engine
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT - Transformation is pre-loaded.
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT - nr of steps to run : 2  , nr of hops : 1
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT - Dispatching started for transformation [ETL_SIE_C_PERSONA_INSERT]
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT - Nr of arguments detected:0 
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT - This is not a replay transformation
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT - I found 2 different steps to launch.
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT - Allocating rowsets...
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT -  Allocating rowsets for step 0 --> Select Aux table
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT -   prevcopies = 1, nextcopies=1
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT - Transformation allocated new rowset [Select Aux table.0 - Vertica Bulk Loader.0]
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT -  Allocated 1 rowsets for step 0 --> Select Aux table  
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT -  Allocating rowsets for step 1 --> Vertica Bulk Loader
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT -  Allocated 1 rowsets for step 1 --> Vertica Bulk Loader  
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT - Allocating Steps & StepData...
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT -  Transformation is about to allocate step [Select Aux table] of type [TableInput]
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT -   Step has nrcopies=1
+2021/06/09 15:12:34 - Select Aux table.0 - distribution activated
+2021/06/09 15:12:34 - Select Aux table.0 - Starting allocation of buffers & new threads...
+2021/06/09 15:12:34 - Select Aux table.0 - Step info: nrinput=0 nroutput=1
+2021/06/09 15:12:34 - Select Aux table.0 - output rel. is  1:1
+2021/06/09 15:12:34 - Select Aux table.0 - Found output rowset [Select Aux table.0 - Vertica Bulk Loader.0]
+2021/06/09 15:12:34 - Select Aux table.0 - Finished dispatching
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT -  Transformation has allocated a new step: [Select Aux table].0
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT -  Transformation is about to allocate step [Vertica Bulk Loader] of type [VerticaBulkLoader]
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT -   Step has nrcopies=1
+2021/06/09 15:12:34 - Vertica Bulk Loader.0 - distribution activated
+2021/06/09 15:12:34 - Vertica Bulk Loader.0 - Starting allocation of buffers & new threads...
+2021/06/09 15:12:34 - Vertica Bulk Loader.0 - Step info: nrinput=1 nroutput=0
+2021/06/09 15:12:34 - Vertica Bulk Loader.0 - Got previous step from [Vertica Bulk Loader] #0 --> Select Aux table
+2021/06/09 15:12:34 - Vertica Bulk Loader.0 - input rel is 1:1
+2021/06/09 15:12:34 - Vertica Bulk Loader.0 - Found input rowset [Select Aux table.0 - Vertica Bulk Loader.0]
+2021/06/09 15:12:34 - Vertica Bulk Loader.0 - Finished dispatching
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT -  Transformation has allocated a new step: [Vertica Bulk Loader].0
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT - This transformation can be replayed with replay date: 2021/06/09 15:12:34
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT - Initialising 2 steps...
+2021/06/09 15:12:34 - Select Aux table.0 - Released server socket on port 0
+2021/06/09 15:12:34 - Vertica-Desa - New database connection defined
+2021/06/09 15:12:34 - Vertica Bulk Loader.0 - Released server socket on port 0
+2021/06/09 15:12:34 - Vertica-Desa - New database connection defined
+2021/06/09 15:12:34 - Vertica Bulk Loader.0 - Connected to database [Vertica-Desa]
+2021/06/09 15:12:34 - Vertica-Desa - Auto commit off
+2021/06/09 15:12:34 - Select Aux table.0 - Connected to database...
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT - Step [Select Aux table.0] initialized flawlessly.
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT - Step [Vertica Bulk Loader.0] initialized flawlessly.
+2021/06/09 15:12:34 - Select Aux table.0 - Starting to run...
+2021/06/09 15:12:34 - Select Aux table.0 - SQL query : SELECT * FROM olap.SIE_C_PERSONAS_AUX
+2021/06/09 15:12:34 - Vertica Bulk Loader.0 - Starting to run...
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT - Transformation has allocated 2 threads and 1 rowsets.
+2021/06/09 15:12:34 - Select Aux table.0 - Signaling 'output done' to 1 output rowsets.
+2021/06/09 15:12:34 - Select Aux table.0 - Finished reading query, closing connection.
+2021/06/09 15:12:34 - Vertica-Desa - Commit on database connection [Vertica-Desa]
+2021/06/09 15:12:34 - Vertica Bulk Loader.0 - Signaling 'output done' to 0 output rowsets.
+2021/06/09 15:12:34 - Vertica-Desa - Connection to database closed!
+2021/06/09 15:12:34 - Vertica Bulk Loader.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=0)
+2021/06/09 15:12:34 - Vertica-Desa - Connection to database closed!
+2021/06/09 15:12:34 - Select Aux table.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=0)
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT - searching for annotations
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_INSERT - no annotations found
+2021/06/09 15:12:34 - JOB_SIE_C_PERSONA - Starting entry [Clean table aux]
+2021/06/09 15:12:34 - JOB_SIE_C_PERSONA - exec(4, 0, Clean table aux.0)
+2021/06/09 15:12:34 - Clean table aux - Starting job entry
+2021/06/09 15:12:34 - Clean table aux - Opening transformation: [/opt/sie/ETL_SIE_C_PERSONA_CLEAN_AUX.ktr]
+2021/06/09 15:12:34 - Clean table aux - Loading transformation from XML file [/opt/sie/ETL_SIE_C_PERSONA_CLEAN_AUX.ktr]
+2021/06/09 15:12:34 - Clean table aux - Starting transformation...(file=${ETL_DIR}/ETL_SIE_C_PERSONA_CLEAN_AUX.ktr, name=Clean table aux, repinfo=null)
+2021/06/09 15:12:34 - Clean table aux - Using run configuration [Pentaho local]
+2021/06/09 15:12:34 - Clean table aux - Using legacy execution engine
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_CLEAN_AUX - Transformation is pre-loaded.
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_CLEAN_AUX - nr of steps to run : 1  , nr of hops : 0
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_CLEAN_AUX - Dispatching started for transformation [ETL_SIE_C_PERSONA_CLEAN_AUX]
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_CLEAN_AUX - Nr of arguments detected:0 
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_CLEAN_AUX - This is not a replay transformation
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_CLEAN_AUX - I found 1 different steps to launch.
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_CLEAN_AUX - Allocating rowsets...
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_CLEAN_AUX -  Allocating rowsets for step 0 --> Delete Personas Aux
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_CLEAN_AUX -  Allocated 0 rowsets for step 0 --> Delete Personas Aux  
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_CLEAN_AUX - Allocating Steps & StepData...
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_CLEAN_AUX -  Transformation is about to allocate step [Delete Personas Aux] of type [ExecSQL]
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_CLEAN_AUX -   Step has nrcopies=1
+2021/06/09 15:12:34 - Delete Personas Aux.0 - distribution activated
+2021/06/09 15:12:34 - Delete Personas Aux.0 - Starting allocation of buffers & new threads...
+2021/06/09 15:12:34 - Delete Personas Aux.0 - Step info: nrinput=0 nroutput=0
+2021/06/09 15:12:34 - Delete Personas Aux.0 - Finished dispatching
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_CLEAN_AUX -  Transformation has allocated a new step: [Delete Personas Aux].0
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_CLEAN_AUX - This transformation can be replayed with replay date: 2021/06/09 15:12:34
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_CLEAN_AUX - Initialising 1 steps...
+2021/06/09 15:12:34 - Delete Personas Aux.0 - Released server socket on port 0
+2021/06/09 15:12:34 - Vertica-Desa - New database connection defined
+2021/06/09 15:12:34 - Delete Personas Aux.0 - Connected to database...
+2021/06/09 15:12:34 - Vertica-Desa - launch DDL statement: 
+2021/06/09 15:12:34 - Vertica-Desa - DELETE FROM olap.SIE_C_PERSONAS_AUX
+2021/06/09 15:12:34 - Vertica-Desa - 1 statement executed
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_CLEAN_AUX - Step [Delete Personas Aux.0] initialized flawlessly.
+2021/06/09 15:12:34 - Delete Personas Aux.0 - Starting to run...
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_CLEAN_AUX - Transformation has allocated 1 threads and 0 rowsets.
+2021/06/09 15:12:34 - Delete Personas Aux.0 - Signaling 'output done' to 0 output rowsets.
+2021/06/09 15:12:34 - Delete Personas Aux.0 - Finished reading query, closing connection.
+2021/06/09 15:12:34 - Vertica-Desa - Connection to database closed!
+2021/06/09 15:12:34 - Delete Personas Aux.0 - Finished processing (I=0, O=0, R=0, W=1, U=0, E=0)
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_CLEAN_AUX - searching for annotations
+2021/06/09 15:12:34 - ETL_SIE_C_PERSONA_CLEAN_AUX - no annotations found
+2021/06/09 15:12:34 - JOB_SIE_C_PERSONA - Finished job entry [Clean table aux] (result=[true])
+2021/06/09 15:12:34 - JOB_SIE_C_PERSONA - Finished job entry [Insert Data in sie_c_personas from aux] (result=[true])
+2021/06/09 15:12:34 - JOB_SIE_C_PERSONA - Finished job entry [Delete Data sie_c_personas] (result=[true])
+2021/06/09 15:12:34 - JOB_SIE_C_PERSONA - Finished job entry [Load in table aux] (result=[true])
+2021/06/09 15:12:34 - JOB_SIE_C_PERSONA - Job execution finished
+2021/06/09 15:12:34 - Kitchen - Finished!
+2021/06/09 15:12:34 - Kitchen - Start=2021/06/09 15:12:21.291, Stop=2021/06/09 15:12:34.795
+2021/06/09 15:12:34 - Kitchen - Processing ended after 13 seconds.
+2021/06/09 15:12:35 - Kitchen - Logging is at level : Debug
+2021/06/09 15:12:35 - Kitchen - Start of run.
+2021/06/09 15:12:35 - Kitchen - Allocate new job.
+2021/06/09 15:12:36 - Kitchen - Parsing command line options.
+2021/06/09 15:12:44 - JOB_SIE_C_PERSONA - Start of job execution
+2021/06/09 15:12:44 - JOB_SIE_C_PERSONA - exec(0, 0, START.0)
+2021/06/09 15:12:44 - START - Starting job entry
+2021/06/09 15:12:44 - JOB_SIE_C_PERSONA - Starting entry [Load in table aux]
+2021/06/09 15:12:44 - JOB_SIE_C_PERSONA - exec(1, 0, Load in table aux.0)
+2021/06/09 15:12:44 - Load in table aux - Starting job entry
+2021/06/09 15:12:44 - Load in table aux - Opening transformation: [/opt/sie/ETL_SIE_C_PERSONA.ktr]
+2021/06/09 15:12:44 - Load in table aux - Loading transformation from XML file [/opt/sie/ETL_SIE_C_PERSONA.ktr]
+2021/06/09 15:12:44 - Load in table aux - Starting transformation...(file=${ETL_DIR}/ETL_SIE_C_PERSONA.ktr, name=Load in table aux, repinfo=null)
+2021/06/09 15:12:44 - Load in table aux - Using run configuration [Pentaho local]
+2021/06/09 15:12:44 - Load in table aux - Using legacy execution engine
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA - Transformation is pre-loaded.
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA - nr of steps to run : 4  , nr of hops : 3
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA - Dispatching started for transformation [ETL_SIE_C_PERSONA]
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA - Nr of arguments detected:0 
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA - This is not a replay transformation
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA - I found 3 different steps to launch.
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA - Allocating rowsets...
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA -  Allocating rowsets for step 0 --> Read Data
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA -   prevcopies = 1, nextcopies=1
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA - Transformation allocated new rowset [Read Data.0 - Vertica Personas.0]
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA -  Allocated 1 rowsets for step 0 --> Read Data  
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA -  Allocating rowsets for step 1 --> Vertica Personas
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA -  Allocated 1 rowsets for step 1 --> Vertica Personas  
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA -  Allocating rowsets for step 2 --> Get System Info
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA -   prevcopies = 1, nextcopies=1
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA - Transformation allocated new rowset [Get System Info.0 - Read Data.0]
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA -  Allocated 2 rowsets for step 2 --> Get System Info  
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA - Allocating Steps & StepData...
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA -  Transformation is about to allocate step [Read Data] of type [TableInput]
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA -   Step has nrcopies=1
+2021/06/09 15:12:44 - Read Data.0 - distribution activated
+2021/06/09 15:12:44 - Read Data.0 - Starting allocation of buffers & new threads...
+2021/06/09 15:12:44 - Read Data.0 - Step info: nrinput=1 nroutput=1
+2021/06/09 15:12:44 - Read Data.0 - Got previous step from [Read Data] #0 --> Get System Info
+2021/06/09 15:12:44 - Read Data.0 - input rel is 1:1
+2021/06/09 15:12:44 - Read Data.0 - Found input rowset [Get System Info.0 - Read Data.0]
+2021/06/09 15:12:44 - Read Data.0 - output rel. is  1:1
+2021/06/09 15:12:44 - Read Data.0 - Found output rowset [Read Data.0 - Vertica Personas.0]
+2021/06/09 15:12:44 - Read Data.0 - Finished dispatching
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA -  Transformation has allocated a new step: [Read Data].0
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA -  Transformation is about to allocate step [Vertica Personas] of type [VerticaBulkLoader]
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA -   Step has nrcopies=1
+2021/06/09 15:12:44 - Vertica Personas.0 - distribution activated
+2021/06/09 15:12:44 - Vertica Personas.0 - Starting allocation of buffers & new threads...
+2021/06/09 15:12:44 - Vertica Personas.0 - Step info: nrinput=1 nroutput=0
+2021/06/09 15:12:44 - Vertica Personas.0 - Got previous step from [Vertica Personas] #0 --> Read Data
+2021/06/09 15:12:44 - Vertica Personas.0 - input rel is 1:1
+2021/06/09 15:12:44 - Vertica Personas.0 - Found input rowset [Read Data.0 - Vertica Personas.0]
+2021/06/09 15:12:44 - Vertica Personas.0 - Finished dispatching
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA -  Transformation has allocated a new step: [Vertica Personas].0
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA -  Transformation is about to allocate step [Get System Info] of type [SystemInfo]
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA -   Step has nrcopies=1
+2021/06/09 15:12:44 - Get System Info.0 - distribution activated
+2021/06/09 15:12:44 - Get System Info.0 - Starting allocation of buffers & new threads...
+2021/06/09 15:12:44 - Get System Info.0 - Step info: nrinput=0 nroutput=1
+2021/06/09 15:12:44 - Get System Info.0 - output rel. is  1:1
+2021/06/09 15:12:44 - Get System Info.0 - Found output rowset [Get System Info.0 - Read Data.0]
+2021/06/09 15:12:44 - Get System Info.0 - Finished dispatching
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA -  Transformation has allocated a new step: [Get System Info].0
+2021/06/09 15:12:44 - SIE_TRACE - New database connection defined
+2021/06/09 15:12:44 - ETL_SIE_C_PERSONA - Opening log connection [SIE_TRACE]
+2021/06/09 15:12:45 - SIE_TRACE - Auto commit off
+2021/06/09 15:12:45 - SIE_TRACE - Auto commit off
+2021/06/09 15:12:45 - SIE_TRACE - launch SELECT statement: 
+2021/06/09 15:12:45 - SIE_TRACE - SELECT top 0 * FROM dbo.SIE_R_BITACORA_ACTUALIZACION_SIE_C_PERSONA WITH (UPDLOCK, HOLDLOCK)
+2021/06/09 15:12:45 - SIE_TRACE - 1 statement executed
+2021/06/09 15:12:45 - ETL_SIE_C_PERSONA - Start date found from previous log entry: 2021-06-09 15:12:30.917
+2021/06/09 15:12:45 - ETL_SIE_C_PERSONA - This transformation can be replayed with replay date: 2021/06/09 15:12:44
+2021/06/09 15:12:45 - SIE_TRACE - Preparing statement: 
+2021/06/09 15:12:45 - SIE_TRACE - INSERT INTO dbo.SIE_R_BITACORA_ACTUALIZACION_SIE_C_PERSONA (ID_BATCH, CHANNEL_ID, TRANSNAME, STATUS, LINES_READ, LINES_WRITTEN, LINES_UPDATED, LINES_INPUT, LINES_OUTPUT, LINES_REJECTED, ERRORS, STARTDATE, ENDDATE, LOGDATE, DEPDATE, REPLAYDATE) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2021/06/09 15:12:45 - SIE_TRACE - Commit on database connection [SIE_TRACE]
+2021/06/09 15:12:45 - SIE_TRACE - Commit on database connection [SIE_TRACE]
+2021/06/09 15:12:45 - SIE_TRACE - Connection to database closed!
+2021/06/09 15:12:45 - ETL_SIE_C_PERSONA - Initialising 3 steps...
+2021/06/09 15:12:45 - Read Data.0 - Released server socket on port 0
+2021/06/09 15:12:45 - Vertica Personas.0 - Released server socket on port 0
+2021/06/09 15:12:45 - SIE_TEMPS - New database connection defined
+2021/06/09 15:12:45 - Get System Info.0 - Released server socket on port 0
+2021/06/09 15:12:45 - Vertica-Desa - New database connection defined
+2021/06/09 15:12:45 - SIE_TEMPS - Auto commit off
+2021/06/09 15:12:45 - Read Data.0 - Connected to database...
+2021/06/09 15:12:45 - Vertica Personas.0 - Connected to database [Vertica-Desa]
+2021/06/09 15:12:45 - ETL_SIE_C_PERSONA - Step [Read Data.0] initialized flawlessly.
+2021/06/09 15:12:45 - ETL_SIE_C_PERSONA - Step [Vertica Personas.0] initialized flawlessly.
+2021/06/09 15:12:45 - ETL_SIE_C_PERSONA - Step [Get System Info.0] initialized flawlessly.
+2021/06/09 15:12:45 - Read Data.0 - Starting to run...
+2021/06/09 15:12:45 - Vertica Personas.0 - Starting to run...
+2021/06/09 15:12:45 - Read Data.0 - Reading query parameters from stream [Get System Info]
+2021/06/09 15:12:45 - Get System Info.0 - Starting to run...
+2021/06/09 15:12:45 - Read Data.0 - Reading from step [Get System Info]
+2021/06/09 15:12:45 - ETL_SIE_C_PERSONA - Transformation has allocated 3 threads and 2 rowsets.
+2021/06/09 15:12:45 - Get System Info.0 - Signaling 'output done' to 1 output rowsets.
+2021/06/09 15:12:45 - Get System Info.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2021/06/09 15:12:46 - Read Data.0 - Query parameters found = [2021/06/09 15:12:30.917], [2021/06/09 15:12:44.959]

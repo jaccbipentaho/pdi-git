@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>DimProductoCategoriasMRP</name>
+    <description />
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection />
+        <schema />
+        <table />
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file />
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2021/03/26 14:34:01.845</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2021/03/26 14:34:01.845</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>Galeno</name>
+    <server>galeno.internal.inss.org</server>
+    <type>POSTGRESQL</type>
+    <access>JNDI</access>
+    <database>Galeno</database>
+    <port>5432</port>
+    <username />
+    <password>Encrypted </password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>5432</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Vertica</name>
+    <server>inss-olp-dev2.internal.inss.org</server>
+    <type>VERTICA5</type>
+    <access>JNDI</access>
+    <database>Vertica</database>
+    <port>5433</port>
+    <username />
+    <password>Encrypted </password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>5433</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>Categorias MRP</from>
+      <to>Gal_d_producto_categoria_mrp 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Execute SQL script 4</from>
+      <to>Categorias MRP</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Categorias MRP</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>Galeno</connection>
+    <sql>select pcc.producto_categoria_id producto_categoria_mrp_id, mrp.n1_id n1_id, mrp.n1_codigo n1_codigo, mrp.n1_nombre n1_nombre,  
+coalesce(mrp.n2_id,0) n2_id, coalesce(mrp.n2_codigo,'S/Info') n2_codigo , coalesce(mrp.n2_nombre,'S/Info') n2_nombre,
+coalesce(mrp.n3_id,0) n3_id, coalesce(mrp.n3_codigo,'S/Info') n3_codigo , coalesce(mrp.n3_nombre,'S/Info') n3_nombre,
+coalesce(mrp.n4_id,0) n4_id, coalesce(mrp.n4_codigo,'S/Info') n4_codigo , coalesce(mrp.n4_nombre,'S/Info') n4_nombre,
+coalesce(mrp.n5_id,0) n5_id, coalesce(mrp.n5_codigo,'S/Info') n5_codigo , coalesce(mrp.n5_nombre,'S/Info') n5_nombre
+from catalogo_galeno.producto_clasificacion_categoria pcc 
+inner join 
+(select nivel1.producto_categoria_id n1_id,nivel1.categoria_padre_id n1_padre_id, nivel1.codigo n1_codigo, nivel1.nombre n1_nombre,
+nivel2.producto_categoria_id n2_id,nivel2.categoria_padre_id n2_padre_id, nivel2.codigo n2_codigo, nivel2.nombre n2_nombre,
+nivel3.producto_categoria_id n3_id,nivel3.categoria_padre_id n3_padre_id, nivel3.codigo n3_codigo, nivel3.nombre n3_nombre,
+nivel4.producto_categoria_id n4_id,nivel4.categoria_padre_id n4_padre_id, nivel4.codigo n4_codigo, nivel4.nombre n4_nombre,
+nivel5.producto_categoria_id n5_id,nivel5.categoria_padre_id n5_padre_id, nivel5.codigo n5_codigo, nivel5.nombre n5_nombre
+from(
+with recursive cate as
+(select pc.producto_categoria_id producto_categoria_id, pc.categoria_padre_id categoria_padre_id,pc.codigo ,pc.nombre,1 as level
+from catalogo_galeno.producto_categoria pc 
+where pc.codigo = 'MRP' and pc.esta_activo =true
+union all 
+select pc1.producto_categoria_id producto_categoria_id, pc1.categoria_padre_id categoria_padre_id,pc1.codigo ,pc1.nombre, cate.level + 1 as level 
+from catalogo_galeno.producto_categoria pc1 
+inner join cate on cate.producto_categoria_id=pc1.categoria_padre_id)
+ select * from cate where level=2 order by 1) nivel1
+ left join (with recursive cate as
+(select pc.producto_categoria_id producto_categoria_id, pc.categoria_padre_id categoria_padre_id,pc.codigo ,pc.nombre,1 as level
+from catalogo_galeno.producto_categoria pc 
+where pc.codigo ='MRP' and pc.esta_activo =true
+union all 
+select pc1.producto_categoria_id producto_categoria_id, pc1.categoria_padre_id categoria_padre_id,pc1.codigo ,pc1.nombre, cate.level + 1 as level 
+from catalogo_galeno.producto_categoria pc1 
+inner join cate on cate.producto_categoria_id=pc1.categoria_padre_id)
+ select * from cate where level=3 order by 1) nivel2 on nivel1.producto_categoria_id=nivel2.categoria_padre_id
+ left join (with recursive cate as
+(select pc.producto_categoria_id producto_categoria_id, pc.categoria_padre_id categoria_padre_id,pc.codigo ,pc.nombre,1 as level
+from catalogo_galeno.producto_categoria pc 
+where pc.codigo ='MRP' and pc.esta_activo =true
+union all 
+select pc1.producto_categoria_id producto_categoria_id, pc1.categoria_padre_id categoria_padre_id,pc1.codigo ,pc1.nombre, cate.level + 1 as level 
+from catalogo_galeno.producto_categoria pc1 
+inner join cate on cate.producto_categoria_id=pc1.categoria_padre_id)
+ select * from cate where level=4 order by 1) nivel3 on nivel2.producto_categoria_id=nivel3.categoria_padre_id
+ left join (with recursive cate as
+(select pc.producto_categoria_id producto_categoria_id, pc.categoria_padre_id categoria_padre_id,pc.codigo ,pc.nombre,1 as level
+from catalogo_galeno.producto_categoria pc 
+where pc.codigo ='MRP' and pc.esta_activo =true
+union all 
+select pc1.producto_categoria_id producto_categoria_id, pc1.categoria_padre_id categoria_padre_id,pc1.codigo ,pc1.nombre, cate.level + 1 as level 
+from catalogo_galeno.producto_categoria pc1 
+inner join cate on cate.producto_categoria_id=pc1.categoria_padre_id)
+ select * from cate where level=5 order by 1) nivel4 on nivel3.producto_categoria_id=nivel4.categoria_padre_id
+left join (with recursive cate as
+(select pc.producto_categoria_id producto_categoria_id, pc.categoria_padre_id categoria_padre_id,pc.codigo ,pc.nombre,1 as level
+from catalogo_galeno.producto_categoria pc 
+where pc.codigo ='MRP' and pc.esta_activo =true
+union all 
+select pc1.producto_categoria_id producto_categoria_id, pc1.categoria_padre_id categoria_padre_id,pc1.codigo ,pc1.nombre, cate.level + 1 as level 
+from catalogo_galeno.producto_categoria pc1 
+inner join cate on cate.producto_categoria_id=pc1.categoria_padre_id)
+ select * from cate where level=6 order by 1) nivel5 on nivel4.producto_categoria_id=nivel5.categoria_padre_id) mrp on pcc.producto_categoria_id =
+ case 
+      when mrp.n5_id isnull then 
+        case when mrp.n4_id isnull then 
+          case when mrp.n3_id isnull then
+            case when mrp.n2_id isnull then 
+              mrp.n1_id
+            else 
+              mrp.n2_id
+            end
+          else 
+            mrp.n3_id
+          end
+        else 
+          mrp.n4_id
+        end
+      else 
+        mrp.n5_id
+      end
+where pcc.esta_activo =true      
+group by pcc.producto_categoria_id, mrp.n1_id, mrp.n1_codigo, mrp.n1_nombre,  
+coalesce(mrp.n2_id,0) , coalesce(mrp.n2_codigo,'S/Info'), coalesce(mrp.n2_nombre,'S/Info'), 
+coalesce(mrp.n3_id,0) , coalesce(mrp.n3_codigo,'S/Info'), coalesce(mrp.n3_nombre,'S/Info'), 
+coalesce(mrp.n4_id,0) , coalesce(mrp.n4_codigo,'S/Info'), coalesce(mrp.n4_nombre,'S/Info'), 
+coalesce(mrp.n5_id,0) , coalesce(mrp.n5_codigo,'S/Info'), coalesce(mrp.n5_nombre,'S/Info')
+order by 1</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>592</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Execute SQL script 4</name>
+    <type>ExecSQL</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>Vertica</connection>
+    <execute_each_row>N</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>truncate table olap.gal_d_producto_categoria_mrp;</sql>
+    <set_params>N</set_params>
+    <insert_field />
+    <update_field />
+    <delete_field />
+    <read_field />
+    <arguments>
+    </arguments>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Gal_d_producto_categoria_mrp 2</name>
+    <type>VerticaBulkLoader</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>Vertica</connection>
+    <schema>olap</schema>
+    <table>gal_d_producto_categoria_mrp</table>
+    <specify_fields>Y</specify_fields>
+    <fields>
+      <field>
+        <column_name>producto_categoria_mrp_id</column_name>
+        <stream_name>producto_categoria_mrp_id</stream_name>
+      </field>
+      <field>
+        <column_name>n1_id</column_name>
+        <stream_name>n1_id</stream_name>
+      </field>
+      <field>
+        <column_name>n1_codigo</column_name>
+        <stream_name>n1_codigo</stream_name>
+      </field>
+      <field>
+        <column_name>n1_nombre</column_name>
+        <stream_name>n1_nombre</stream_name>
+      </field>
+      <field>
+        <column_name>n2_id</column_name>
+        <stream_name>n2_id</stream_name>
+      </field>
+      <field>
+        <column_name>n2_codigo</column_name>
+        <stream_name>n2_codigo</stream_name>
+      </field>
+      <field>
+        <column_name>n2_nombre</column_name>
+        <stream_name>n2_nombre</stream_name>
+      </field>
+      <field>
+        <column_name>n3_id</column_name>
+        <stream_name>n3_id</stream_name>
+      </field>
+      <field>
+        <column_name>n3_codigo</column_name>
+        <stream_name>n3_codigo</stream_name>
+      </field>
+      <field>
+        <column_name>n3_nombre</column_name>
+        <stream_name>n3_nombre</stream_name>
+      </field>
+      <field>
+        <column_name>n4_id</column_name>
+        <stream_name>n4_id</stream_name>
+      </field>
+      <field>
+        <column_name>n4_codigo</column_name>
+        <stream_name>n4_codigo</stream_name>
+      </field>
+      <field>
+        <column_name>n4_nombre</column_name>
+        <stream_name>n4_nombre</stream_name>
+      </field>
+      <field>
+        <column_name>n5_id</column_name>
+        <stream_name>n5_id</stream_name>
+      </field>
+      <field>
+        <column_name>n5_codigo</column_name>
+        <stream_name>n5_codigo</stream_name>
+      </field>
+      <field>
+        <column_name>n5_nombre</column_name>
+        <stream_name>n5_nombre</stream_name>
+      </field>
+    </fields>
+    <exceptions_filename />
+    <rejected_data_filename />
+    <abort_on_error>Y</abort_on_error>
+    <direct>Y</direct>
+    <stream_name />
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>768</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>
